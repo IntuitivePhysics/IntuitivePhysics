@@ -84,6 +84,8 @@ main{
     flex-basis: auto;
     margin: 10px;
     padding: 15px;
+    box-sizing: border-box;
+    flex-basis: 400px;
 }
 
 .post-box{
@@ -110,8 +112,9 @@ main{
 }
 
 .post-box h3{
-    padding-bottom: 15px;
+    padding-bottom: 10px;
     border-bottom: 1px solid black;
+    margin-bottom: 5px;
 }
 
 .post-head{
