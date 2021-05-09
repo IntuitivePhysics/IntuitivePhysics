@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>{{page.title}}</title>
+    {% feed_meta %}
+    {% seo %}
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+          tex2jax: {
+            inlineMath: [['$','$'], ['\\(','\\)']],
+            processEscapes: true
+          }
+        });
+        </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML"
+        type="text/javascript"></script>
+    <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+
+<body>
+    <header>
+        <div class="float-child">
+            <h1>Intuitive Physics</h1>
+        </div>
+        <div class="float-child">
+            <nav>
+                <ul>
+                    {% for item in site.data.navigation %}
+                    <li>
+                        <a href="{{item.link}}" {% if page.url==item.link %}class="selected" {% endif %}>
+                            {{item.name}}
+                        </a>
+                    </li>
+                    {% endfor %}
+                </ul>
+            </nav>
+        </div>
+        <div class="clr"></div>
+    </header>
+
+    {{ content }}
+</body>
+
+</html>

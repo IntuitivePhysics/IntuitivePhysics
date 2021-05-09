@@ -1,0 +1,26 @@
+---
+layout: navbar_page
+title: Home
+---
+<main>
+    <div class="head-content">
+        <div class="foreword">
+            <p>Physics is more than a bunch of mathematical equations. It describes the beautiful and simplistic laws of
+                nature (can we all just forget about quantum mechanics for a moment)! Yet, a standard physics education
+                often omits these subtleties. Therefore, in Intuitive Physics, I wish to share with you some fascinating
+                yet
+                omitted insights into classical physics.</p>
+        </div>
+    </div>
+    <div class="main-content">
+        <h2>Featured Posts</h2>
+        <div class="flex-container">
+            {% for post in site.posts %}
+            <a href="{{ post.url }}" class="flex-child post-box">
+                <h3>{{ post.title }}</h3>
+                <p>{{ post.excerpt }}</p>
+            </a>
+            {% endfor %}
+        </div>
+    </div>
+</main>
