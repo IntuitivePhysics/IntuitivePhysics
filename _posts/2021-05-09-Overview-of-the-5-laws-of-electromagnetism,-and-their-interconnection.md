@@ -5,8 +5,6 @@ title: Overview of the 5 laws of electromagnetism, and their interconnection
 
 author: Michael Huang
 
-categories: Electromagnetism
-
 excerpt: each law of electromagnetism governs 1 of the 6 directions of interactions between the 3 objects, the electric field, magnetic field, and charge...
 ---
 
