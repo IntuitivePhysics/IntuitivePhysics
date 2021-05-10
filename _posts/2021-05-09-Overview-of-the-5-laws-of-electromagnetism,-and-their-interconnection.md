@@ -69,7 +69,7 @@ To be more precise, we may separate the discussion of the divergence and curl of
 
 
 
- #### Maxwell-Faraday's Law
+#### Maxwell-Faraday's Law
 
 $\nabla\times \textbf{E} = -\frac{\partial \textbf{B}}{\partial t}$
 
