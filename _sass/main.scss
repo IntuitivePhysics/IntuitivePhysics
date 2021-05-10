@@ -15,8 +15,7 @@ body{
 }
 
 header{
-    background-color: rgba(117, 187, 219, 0.6);
-    color: rgb(50, 61, 80);
+    box-shadow: 0px 5px 25px 0px rgba(0, 0, 0, 0.5);
 }
 
 .float-child{
@@ -42,7 +41,7 @@ header li{
     padding-left: 10px;
 }
 
-header nav a{
+header a{
     text-decoration: none;
     color: rgb(26, 26, 26);
 }
@@ -51,7 +50,7 @@ header nav a{
     font-weight: bolder;
 }
 
-header nav a:hover{
+header a:hover{
     text-decoration: none;
     color: rgb(71, 71, 71);
 }
@@ -83,25 +82,26 @@ main{
 
 .flex-child {
     margin: 10px;
-    padding: 15px;
-    flex-basis: 340px;
-    box-sizing: border-box;
+
 }
 
 .post-box{
     box-shadow: 10px 10px 30px 0px rgb(0, 0, 0);
     border-radius: 15px;
     background-color: rgb(230, 230, 230);
+    padding: 15px;
+    flex-basis: 340px;
+    box-sizing: border-box;
 }
 
-.flex-container a{
+.post-container a{
     display: block;
     color: rgb(26, 26, 26);
     text-decoration: none;
     font-family: 'Courier New', Courier;
 }
 
-.flex-container a:hover{
+.post-container a:hover{
     color: rgb(80, 80, 80);
     box-shadow: 5px 5px 20px 0px rgb(0, 0, 0);
 }
@@ -125,9 +125,56 @@ main{
     margin-bottom: 15px;
 }
 
+footer{
+    box-shadow: 0px -5px 25px 0px rgba(0, 0, 0, 0.5);
+    color: rgb(26, 26, 26);
+}
+
+.contact{
+    font-size: small;
+    font:italic;
+}
+
+.contact a{
+    text-decoration: none;
+    color: rgb(26, 26, 26);
+}
+
+.contact a:hover{
+    text-decoration: none;
+    color: rgb(71, 71, 71);
+}
+
+.main-content h2{
+    margin-bottom: 10px;
+}
+
+.main-content p{
+    line-height: 2em;
+    padding-bottom: 10px;
+}
+
+.head-content p{
+    line-height: 2em;
+    padding-bottom: 10px;
+}
+
+.head-content h2{
+    margin-bottom: 10px;
+}
+
+p a{
+    text-decoration: underline;
+    color: rgb(26, 26, 26);
+}
+p a:hover{
+    color: rgb(80, 80, 80);
+}
+
 .post{
     margin:35px;
 }
+
 
 .post-mid{
     line-height: 2em;

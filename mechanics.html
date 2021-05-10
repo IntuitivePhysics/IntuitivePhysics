@@ -6,31 +6,28 @@ title: Intuitive Physics Electromagnetism
 <main>
     <div class="head-content">
         <div class="float-child foreword half-screen">
-            Behold the full wonder of the laws of Electromagnetism!
-            In this section, we explore the intuition and interconnection of the 5 laws of electromagnetism, the 4
-            Maxwell's Equations and Lorentz force law.
+            In this section, we will explore classical mechanics from Newtonian to Lagrangian. See how many equations on
+            the right you can recognize, they all represent Newton's $2^{nd}$ Law!
         </div>
         <div class="float-child half-screen">
             $$
-            \nabla\cdot \textbf{E}=\frac{\rho}{\epsilon_0}
+            F=ma
             \\
-            \nabla\cdot \textbf{B}=0
+            \textbf{F}=m\textbf{a}
             \\
-            \nabla\times \textbf{E} = -\frac{\partial \textbf{B}}{\partial t}
+            \textbf{F}=\frac{d\textbf{p}}{dt}
             \\
-            \nabla\times \textbf{B} = \mu_0 \textbf{j} + \mu_0\epsilon_0 \frac{\partial \textbf{E}}{\partial t}
-            \\
-            \textbf{F}=q(\textbf{E}+\textbf{v}\times\textbf{B})
+            \frac{∂L}{∂x} = \frac{d}{dt}\frac{∂L}{∂x’}
             $$
 
         </div>
         <div class="clr"></div>
     </div>
     <div class="main-content">
-        <h2>All E&M Posts</h2>
+        <h2>All Mechanics Posts</h2>
         <div class="flex-container post-container">
             {% for post in site.posts %}
-            {% if post.tags contains "electromagnetism" %}
+            {% if post.tags contains "mechanics" %}
             <a href="{{ post.url }}" class="flex-child post-box">
                 <h3>{{ post.title }}</h3>
                 <p>{{ post.excerpt }}</p>

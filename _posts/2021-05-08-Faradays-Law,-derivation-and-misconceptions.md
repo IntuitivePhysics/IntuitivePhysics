@@ -5,6 +5,14 @@ title: Faraday's Law, derivation and misconceptions
 
 author: Michael Huang
 
+tags:
+    - electromagnetism
+    - faraday
+    - maxwell
+    - lorentz
+    - derivation
+    - misconception
+
 excerpt: The only fundamental theorem of electromagnetims we used above is the Lorentz Force Law. So, in other words, this Motional Faraday's Law should have equal predictive power to the Lorentz Force Law...
 ---
 

@@ -5,6 +5,15 @@ title: Overview of the 5 laws of electromagnetism, and their interconnection
 
 author: Michael Huang
 
+tags:
+    - electromagnetism
+    - faraday
+    - maxwell
+    - lorentz
+    - ampere
+    - gauss
+    - overview
+
 excerpt: each law of electromagnetism governs 1 of the 6 directions of interactions between the 3 objects, the electric field, magnetic field, and charge...
 ---
 
@@ -43,7 +52,7 @@ $$
 $$
 And etc...
 
-So, just remember that the premise of differential form of Maxwell's Equations is that charges are not discrete, but approximated as a continuum. So $\rho \lt \infty$ always. 
+So, just remember that the premise of differential form of Maxwell's Equations is that charges are not discrete, but approximated as a continuum. So $\rho \lt \infty$ always.
 
 
 
@@ -55,17 +64,17 @@ $\nabla \cdot \textbf{E}=\frac{\rho}{\epsilon_0}$ can be viewed as an equation g
 
 #### Gauss's Law for Magnetism
 
-$\nabla \cdot \textbf{B}=0$ says pretty much the same thing. The divergence of magnetic field is always 0. If you think of the velocity field of any incompressible fluid, its divergence must also be zero (since 0 field line/fluid originate from a certain point). This governs how a static charge affects $\textbf{B}$ field: it does nothing to it (however, a moving charge does affect magnetic field). 
+$\nabla \cdot \textbf{B}=0$ says pretty much the same thing. The divergence of magnetic field is always 0. If you think of the velocity field of any incompressible fluid, its divergence must also be zero (since 0 field line/fluid originate from a certain point). This governs how a static charge affects $\textbf{B}$ field: it does nothing to it (however, a moving charge does affect magnetic field).
 
 
 
-So the two Gauss's Laws tells us how charge affects $\textbf{E}$ and $\textbf{B}$ fields. And colloquially,  they tell us that charges create "sinks" or "sources" in electric field, but they don't create "sources" and "sinks" in magnetic field. 
+So the two Gauss's Laws tells us how charge affects $\textbf{E}$ and $\textbf{B}$ fields. And colloquially,  they tell us that charges create "sinks" or "sources" in electric field, but they don't create "sources" and "sinks" in magnetic field.
 
 They represent $Q_{positional}\rightarrow \textbf{E},\textbf{B}$ direction of interaction
 
 #### sidenote:
 
-To be more precise, we may separate the discussion of the divergence and curl of $\textbf{E}, \textbf{B}$ fields. The two Gauss's Laws gives us the divergence of the two fields. The divergences of the 2 fields are only affected by the location of charge, which is rather interesting. 
+To be more precise, we may separate the discussion of the divergence and curl of $\textbf{E}, \textbf{B}$ fields. The two Gauss's Laws gives us the divergence of the two fields. The divergences of the 2 fields are only affected by the location of charge, which is rather interesting.
 
 
 
@@ -93,13 +102,13 @@ Last but not least (in fact, perhaps most important)
 
 $\textbf{F}=q(\textbf{E}+\textbf{v}\times\textbf{B})$
 
-It gives how $\textbf{E}$ field and $\textbf{B}$ affect charge, so it provides this direction of interaction $\textbf{E},\textbf{B}\rightarrow Q$. It's not a Maxwell's Equation because, unlike the other four, it doesn't describe electromagnetic field (or $\textbf{E}$ and $\textbf{B}$). Instead, it describes how charges are affected by them. 
+It gives how $\textbf{E}$ field and $\textbf{B}$ affect charge, so it provides this direction of interaction $\textbf{E},\textbf{B}\rightarrow Q$. It's not a Maxwell's Equation because, unlike the other four, it doesn't describe electromagnetic field (or $\textbf{E}$ and $\textbf{B}$). Instead, it describes how charges are affected by them.
 
 
 
 ### Conclusion
 
-As we've seen, each law of electromagnetism governs 1 of the 6 directions of interactions between the 3 objects: electric field, magnetic field, and charge. 
+As we've seen, each law of electromagnetism governs 1 of the 6 directions of interactions between the 3 objects: electric field, magnetic field, and charge.
 $$
 \textbf{E} \Longleftrightarrow \textbf{B}
 \\
@@ -107,4 +116,4 @@ $$
 \\
 \textbf{B} \Longleftrightarrow Q
 $$
-A reason why there're only 5 equations instead of 6 is that Lorentz Force Law actually has 2 components separate components $\textbf{F}=q\textbf{E}$ and $\textbf{F}=q\textbf{v}\times \textbf{B}$. So it actually contains 2 pieces of information and 2 directions of the interactions. 
+A reason why there're only 5 equations instead of 6 is that Lorentz Force Law actually has 2 components separate components $\textbf{F}=q\textbf{E}$ and $\textbf{F}=q\textbf{v}\times \textbf{B}$. So it actually contains 2 pieces of information and 2 directions of the interactions.
