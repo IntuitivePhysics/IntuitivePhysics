@@ -4,5 +4,3 @@ plugins:
   - jekyll-feed
   - jekyll-sitemap
   - jekyll-seo-tag
-
-google_analytics: G-H8PKLQ3EXF
