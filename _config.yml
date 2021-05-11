@@ -1,6 +1,18 @@
 title : Intuitive Physics
-description : Understand physics deeply and intuitively!
+tagline : Understand physics deeply and intuitively!
+description : I share my insights into classical physics in this blog, from Faraday's Paradoxes to the definition of angular momentum.
 plugins:
   - jekyll-feed
   - jekyll-sitemap
   - jekyll-seo-tag
+  - jekyll-paginate
+
+
+author:
+  name: Michael Huang
+social:
+  name: Michael Huang
+  links:
+    - https://www.linkedin.com/in/michael-huang-610661196/
+    - https://github.com/michaelyhuang23
+

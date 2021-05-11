@@ -5,6 +5,10 @@ title: Faraday's Law, derivation and misconceptions
 
 author: Michael Huang
 
+permalink: faraday-derivation-part1
+
+description: An intuitive derivation of Faraday's Law, and some explanations of its difference from Maxwell-Faraday's Equation.
+
 tags:
     - electromagnetism
     - faraday
