@@ -19,7 +19,7 @@ excerpt: The only fundamental theorem of electromagnetims we used above is the L
 
 redirect_from:
     - /2021/05/08/Faradays-Law,-derivation-and-misconceptions.html
-    - /electromagnetism/Faradays-Law,-derivation-and-misconceptions
+    - /electromagnetism/Faradays-Law,-derivation-and-misconceptions/
 ---
 
 ### Part 1
