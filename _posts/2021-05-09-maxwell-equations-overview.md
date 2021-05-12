@@ -5,8 +5,6 @@ title: Overview of the 5 laws of electromagnetism, and their interconnection
 
 author: Michael Huang
 
-permalink: maxwell-equations-overview
-
 description: An intuitive explanation Maxwell's Equations and Lorentz force law, with focus on their interconnections and individual roles.
 
 tags:
