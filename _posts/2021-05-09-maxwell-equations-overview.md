@@ -17,6 +17,10 @@ tags:
     - overview
 
 excerpt: each law of electromagnetism governs 1 of the 6 directions of interactions between the 3 objects, the electric field, magnetic field, and charge...
+
+redirect_from:
+    - /electromagnetism/Overview-of-the-5-laws-of-electromagnetism,-and-their-interconnection
+    - /2021/05/09/Overview-of-the-5-laws-of-electromagnetism,-and-their-interconnection.html
 ---
 
 Let's show the formula first...
