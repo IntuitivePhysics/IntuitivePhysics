@@ -1,7 +1,7 @@
 ---
 layout: post
 
-title: Overview of the 5 laws of electromagnetism, and their interconnection
+title: Laws of electromagnetism overview, interconnections
 
 author: Michael Huang
 
