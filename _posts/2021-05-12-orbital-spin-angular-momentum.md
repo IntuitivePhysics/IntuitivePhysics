@@ -1,7 +1,7 @@
 ---
 layout: post
 
-title: Classical Physics: Orbital, spin, total angular momentum, and hidden tricks
+title: Classical Physics, orbital, spin, total angular momentum, and hidden tricks
 
 author: Michael Huang
 
