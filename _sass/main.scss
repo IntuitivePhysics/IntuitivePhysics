@@ -183,7 +183,8 @@ p a:hover{
 .related-post{
     width: 15%;
     margin-top: 10%;
-    border: 1px ridge;
+    border-left: 2px ridge black;
+    padding: 10px;
     box-sizing: border-box;
 }
 
@@ -191,11 +192,18 @@ p a:hover{
     margin-bottom: 15px;
 }
 .related-post h5{
-    margin-bottom: 5px;
+    margin-bottom: 15px;
 }
 .related-post a{
     text-decoration: none;
+    color: rgb(26, 28, 109);
+    font-weight: bolder;
+}
+
+.related-post a:hover{
+    text-decoration: none;
     color: rgb(26, 26, 26);
+    font-style: italic;
 }
 
 .post-mid{
