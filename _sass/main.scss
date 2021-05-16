@@ -56,7 +56,7 @@ header a:hover{
 }
 
 main{
-    padding: 35px;
+    margin: 35px;
 }
 
 .foreword{
@@ -154,6 +154,11 @@ footer{
     padding-bottom: 10px;
 }
 
+.head-content{
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
 .head-content p{
     line-height: 2em;
     padding-bottom: 10px;
@@ -175,9 +180,31 @@ p a:hover{
     margin:35px;
 }
 
+.related-post{
+    width: 15%;
+    margin-top: 10%;
+    border: 1px ridge;
+    box-sizing: border-box;
+}
+
+.related-post h4{
+    margin-bottom: 15px;
+}
+.related-post h5{
+    margin-bottom: 5px;
+}
+.related-post a{
+    text-decoration: none;
+    color: rgb(26, 26, 26);
+}
 
 .post-mid{
+    width: 85%;
+    padding-left: 10%;
+    padding-right: 5%;
+    box-sizing: border-box;
     line-height: 2em;
+    font-size: large;
     a{
         text-decoration: underline;
         color: rgb(26, 26, 26);
@@ -194,7 +221,7 @@ p a:hover{
         padding-left: 15px;
     }
     h3{
-        margin-top:25px;
+        margin-top:30px;
         font-size: x-large;
     }
     h2{
@@ -202,14 +229,14 @@ p a:hover{
         font-size: xx-large;
     }
     h4{
-        margin-top:15px;
+        margin-top:25px;
         font-size: larger;
     }
     h5{
-        margin-top:10px;
-        font-size: large;
+        margin-top:15px;
     }
     p{
         margin-left: 15px;
+        margin-top: 20px;
     }
 }
