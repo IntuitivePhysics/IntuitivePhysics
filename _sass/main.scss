@@ -1,3 +1,13 @@
+@media only screen and (min-width: 600px) {
+    .post-mid{
+        padding-left: 10%;
+    }
+    .head-content{
+        margin-left: 15%;
+        margin-right: 15%;
+    }
+}
+
 .clr{
     clear:both;
 }
@@ -154,10 +164,6 @@ footer{
     padding-bottom: 10px;
 }
 
-.head-content{
-    margin-left: 15%;
-    margin-right: 15%;
-}
 
 .head-content p{
     line-height: 2em;
@@ -208,7 +214,6 @@ p a:hover{
 
 .post-mid{
     width: 85%;
-    padding-left: 10%;
     padding-right: 5%;
     box-sizing: border-box;
     line-height: 2em;
