@@ -7,10 +7,10 @@ layout: navbar_page
         <p>Written {{ page.date | date_to_string }} by {{ page.author }}</p>
     </div>
     <hr>
-    <div class="float-child post-mid">
+    <div class="float-child-desk post-mid">
         {{ content }}
     </div>
-    <div class="float-child related-post">
+    <div class="float-child-desk related-post">
 
         {% assign postCount = 0 %}
         {% for post in site.posts %}
