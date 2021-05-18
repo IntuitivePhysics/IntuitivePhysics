@@ -10,7 +10,6 @@ layout: navbar_page
     <div class="float-child-desk post-mid">
         {{ content }}
     </div>
-    <div class="float-child-desk related-post">
 
         {% assign postCount = 0 %}
         {% for post in site.posts %}
@@ -27,6 +26,7 @@ layout: navbar_page
             {% endif %}
         {% endfor %}
         {% if postCount>=1 %}
+        <div class="float-child-desk related-post">
         <h4>Related Posts</h4>
         {% for post in site.posts %}
             {% if post.url != page.url %}
@@ -41,7 +41,7 @@ layout: navbar_page
                 {% endif %}
             {% endif %}
         {% endfor %}
+        </div>
         {% endif %}
-    </div>
     <div class="clr"></div>
 </div>

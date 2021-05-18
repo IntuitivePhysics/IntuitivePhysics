@@ -213,9 +213,11 @@ Recall	$\mathcal{E_{induced}}=\oint\limits_{\partial \sigma}E\cdot dl=-\iint\lim
 
 
 
-Now we add $\mathcal{E}_{motional}$ and $\mathcal{E}_{induced}$
+Now we add $\mathcal{E_{motional}}, \space \mathcal{E_{induced}}$. 
 
-$\mathcal{E_{net}}=\mathcal{E_{motional}}+\mathcal{E_{induced}}=-\frac{\partial\phi_{B\space inside\space loop\space due\space to\space change\space in\space \sigma}}{\partial t}-\frac{\partial \phi_{B\space due \space to \space change\space in\space B}}{\partial t}$
+$\mathcal{E_{net}}=\mathcal{E_{motional}}+\mathcal{E_{induced}}$
+
+$=-\frac{\partial\phi_{B\space inside\space loop\space due\space to\space change\space in\space \sigma}}{\partial t}-\frac{\partial \phi_{B\space due \space to \space change\space in\space B}}{\partial t}$
 
 Notice two subtleties:
 
