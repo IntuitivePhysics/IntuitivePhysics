@@ -179,7 +179,6 @@ p a:hover{
 }
 
 .related-post{
-    width: 15%;
     margin-top: 10%;
     border-left: 2px ridge black;
     padding: 10px;
@@ -260,5 +259,8 @@ p a:hover{
     }
     .float-child-desk{
         float: left;
+    }
+    .related-post{
+        width: 15%;
     }
 }
