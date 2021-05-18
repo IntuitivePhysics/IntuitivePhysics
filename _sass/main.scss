@@ -3,6 +3,7 @@
         padding-left: 10%;
         width: 85%;
         padding-right: 5%;
+        box-sizing: border-box;
     }
     .head-content{
         margin-left: 15%;
@@ -218,7 +219,6 @@ p a:hover{
 }
 
 .post-mid{
-    box-sizing: border-box;
     line-height: 2em;
     font-size: large;
     a{
