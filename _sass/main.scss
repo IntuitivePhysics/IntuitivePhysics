@@ -245,7 +245,7 @@ p a:hover{
 }
 
 
-@media only screen and (max-width: 768px) {
+@media only screen and (min-width: 768px) {
     .post-mid{
         padding-left: 10%;
         width: 85%;
