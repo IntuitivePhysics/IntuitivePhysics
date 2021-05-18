@@ -1,18 +1,4 @@
-@media only screen and (min-width: 600px) {
-    .post-mid{
-        padding-left: 10%;
-        width: 85%;
-        padding-right: 5%;
-        box-sizing: border-box;
-    }
-    .head-content{
-        margin-left: 15%;
-        margin-right: 15%;
-    }
-    .float-child-desk{
-        float: left;
-    }
-}
+
 
 .clr{
     clear:both;
@@ -220,6 +206,7 @@ p a:hover{
 
 .post-mid{
     line-height: 2em;
+    width: 100%;
     font-size: large;
     a{
         text-decoration: underline;
@@ -254,5 +241,22 @@ p a:hover{
     p{
         margin-left: 15px;
         margin-top: 20px;
+    }
+}
+
+
+@media only screen and (min-width: 600px) {
+    .post-mid{
+        padding-left: 10%;
+        width: 85%;
+        padding-right: 5%;
+        box-sizing: border-box;
+    }
+    .head-content{
+        margin-left: 15%;
+        margin-right: 15%;
+    }
+    .float-child-desk{
+        float: left;
     }
 }
