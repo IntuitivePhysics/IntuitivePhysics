@@ -165,6 +165,10 @@ footer{
 .head-content h2{
     margin-bottom: 10px;
 }
+.head-content{
+    margin-left: 15%;
+    margin-right: 15%;
+}
 
 p a{
     text-decoration: underline;
@@ -179,6 +183,7 @@ p a:hover{
 }
 
 .related-post{
+    width: 15%;
     margin-top: 10%;
     border-left: 2px ridge black;
     padding: 10px;
@@ -203,11 +208,14 @@ p a:hover{
     font-style: italic;
 }
 .float-child-desk{
-    float: none;
+    float: left;
 }
 .post-mid{
     line-height: 2em;
-    width: 100%;
+    padding-left: 10%;
+    width: 85%;
+    padding-right: 5%;
+    box-sizing: border-box;
     font-size: large;
     a{
         text-decoration: underline;
@@ -246,21 +254,23 @@ p a:hover{
 }
 
 
-@media only screen and (min-width: 768px) {
+@media only screen and (max-width: 768px) {
     .post-mid{
-        padding-left: 10%;
-        width: 85%;
-        padding-right: 5%;
-        box-sizing: border-box;
+        padding-left: 0;
+        width: 100%;
+        padding-right: 0;
+        font-size: medium;
     }
     .head-content{
-        margin-left: 15%;
-        margin-right: 15%;
+        margin-left: 0;
+        margin-right: 0;
     }
     .float-child-desk{
-        float: left;
+        float: none;
     }
     .related-post{
-        width: 15%;
+        width: auto;
+        border-left: none;
+        border-top: 2px ridge black;
     }
 }
