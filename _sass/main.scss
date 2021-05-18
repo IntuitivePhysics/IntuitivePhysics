@@ -1,6 +1,8 @@
 @media only screen and (min-width: 600px) {
     .post-mid{
         padding-left: 10%;
+        width: 85%;
+        padding-right: 5%;
     }
     .head-content{
         margin-left: 15%;
@@ -216,8 +218,6 @@ p a:hover{
 }
 
 .post-mid{
-    width: 85%;
-    padding-right: 5%;
     box-sizing: border-box;
     line-height: 2em;
     font-size: large;
