@@ -74,7 +74,6 @@ main{
 }
 
 .flex-container {
-    margin-top: 10px;
     display: flex;
     justify-content: start;
     flex-wrap: wrap;
@@ -82,9 +81,12 @@ main{
     width: 90%;
 }
 
+.space-out{
+    justify-content: space-between;
+}
+
 .flex-child {
     margin: 10px;
-
 }
 
 .post-box{
@@ -127,8 +129,20 @@ main{
     margin-bottom: 15px;
 }
 
+.padder{
+    padding-left:10%;
+    padding-right:10%;
+    padding-top:25px;
+    padding-bottom:25px;
+}
+
+.padder li{
+    margin-bottom:15px;
+}
+
 footer{
     margin-top: 35%;
+    padding:15px;
     box-shadow: 0px -5px 25px 0px rgba(0, 0, 0, 0.5);
     color: rgb(26, 26, 26);
 }
@@ -138,12 +152,12 @@ footer{
     font:italic;
 }
 
-.contact a{
+.head-content a{
     text-decoration: none;
     color: rgb(26, 26, 26);
 }
 
-.contact a:hover{
+.head-content a:hover{
     text-decoration: none;
     color: rgb(71, 71, 71);
 }
