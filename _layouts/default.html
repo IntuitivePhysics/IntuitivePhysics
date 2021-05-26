@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>{{page.title}}</title>
+    <meta name="description"
+        content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
+    {% feed_meta %}
+    {% seo %}
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+          tex2jax: {
+            inlineMath: [['$','$'], ['\\(','\\)']],
+            processEscapes: true
+          }
+        });
+        </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML"
+        type="text/javascript"></script>
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="shortcut icon" type="image/jpeg" href="/assets/images/Intuitive-Physics.jpeg">
+
+    {% include analytics.html %}
+</head>
+
+
+<body>
+
+    <div class="sidebar">
+        <div class="foreword">
+            <h3>Michael Huang</h3>
+            <img src="/assets/images/selfie.jpeg">
+            <p>I am a physics student and enthusiast with an unquenchable
+                desire to learn and fully understand every physics concept!</p>
+            <h3>Purpose of this blog</h3>
+            <p>To share interesting yet often omitted insights into various topics in classical physics.</p>
+        </div>
+    </div>
+    <div class="mainbody">
+
+        <header>
+            <div class="float-child">
+                <a href="/index.html">
+                    <h1><img class="logo" src="/assets/images/Intuitive-Physics.jpeg" alt="Intuitive Physics Logo"></h1>
+                </a>
+            </div>
+            <div class="float-child">
+                <nav>
+                    <ul>
+                        {% for item in site.data.navigation %}
+                        <li>
+                            <a href="{{item.link}}" {% if page.url==item.link %}class="selected" {% endif %}>
+                                {{item.name}}
+                            </a>
+                        </li>
+                        {% endfor %}
+                    </ul>
+                </nav>
+            </div>
+            <div class="clr"></div>
+        </header>
+
+        {{ content }}
+
+        <footer>
+            <div class="flex-container space-out">
+                <div class="flex-child contact">
+                    <h4>Contacts</h4>
+                    <p><b>Email: </b>michaelyhuang23 (at) gmail (dot) com</p>
+                    <div>
+                        <a href="https://github.com/IntuitivePhysics">GitHub</a>
+                    </div>
+                    <div>
+                        <a href="https://www.linkedin.com/in/michael-huang-610661196/">LinkedIn</a>
+                    </div>
+                    <div>
+                        <a href="https://michaelyhuang23.github.io">Personal Website</a>
+                    </div>
+                </div>
+                <div class="flex-child contact">
+                    <h4>Quick Links</h4>
+                    <p><a href="otherblogs.html">other resources</a></p>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>
