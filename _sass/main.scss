@@ -8,20 +8,33 @@
     padding:0;
     margin:0;
     font-family: Arial, Helvetica, sans-serif;
+    color:rgb(204, 200, 191)
 }
 
+
 body{
-    background-image: url("../images/bg3.jpg");
+    background-image: url("../images/wallpaper.jpg");
     background-position: center;
-    background-repeat: repeat-y;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.mainbody{
+    width: 75%;
+    margin-left: 25%;
 }
 
 header{
+    background-color: rgba(46, 46, 48, 1);
     box-shadow: 0px 5px 25px 0px rgba(0, 0, 0, 0.5);
 }
 
 .float-child{
     float: left;
+}
+
+h3{
+    margin:15px;
 }
 
 header h1{
@@ -43,22 +56,42 @@ header li{
     padding-left: 10px;
 }
 
-header a{
+
+a{
     text-decoration: none;
-    color: rgb(26, 26, 26);
+    color:aliceblue;
+}
+a:hover{
+    color:rgb(187, 195, 202);
 }
 
 .selected{
     font-weight: bolder;
 }
 
-header a:hover{
-    text-decoration: none;
-    color: rgb(71, 71, 71);
+main{
+    overflow: hidden;
+    position: relative;
 }
 
-main{
-    margin: 35px;
+.main-left{
+    padding:35px;
+    width: 80%;
+    float:left;
+    background-color: rgba(19, 19, 19, 0.8);
+    box-sizing: border-box;
+    padding-bottom: 15%;
+}
+
+.main-right{
+    height: 100%;
+    width: 20%;
+    left:80%;
+    position: absolute;
+    float:left;
+    border-left:2px solid black;
+    box-shadow: -5px -5px 20px 0px rgb(0, 0, 0);
+    box-sizing: border-box;
 }
 
 .foreword{
@@ -89,24 +122,45 @@ main{
     margin: 10px;
 }
 
+.sidebar{
+    position: fixed;
+    background-color: rgba(32, 32, 32, 0.164);
+    border-right: 2px solid black;
+    box-shadow: 5px 5px 20px 0px rgb(0, 0, 0);
+    width:25%;
+    height: 100%;
+    overflow-y: scroll;
+}
+
+img{
+    max-width: 100%;
+    max-height: auto;
+}
+
+.logo{
+    margin: 15px;
+    margin-bottom: 0;
+    max-width: 100px;
+    max-height: 100px;
+}
+
 .post-box{
     box-shadow: 10px 10px 30px 0px rgb(0, 0, 0);
-    border-radius: 15px;
-    background-color: rgb(230, 230, 230);
+    border-radius: 5px;
+    background-color: rgb(37, 37, 37);
     padding: 15px;
-    flex-basis: 340px;
+    flex-basis: content;
     box-sizing: border-box;
 }
 
+
 .post-container a{
     display: block;
-    color: rgb(26, 26, 26);
     text-decoration: none;
     font-family: 'Courier New', Courier;
 }
 
 .post-container a:hover{
-    color: rgb(80, 80, 80);
     box-shadow: 5px 5px 20px 0px rgb(0, 0, 0);
 }
 
@@ -141,35 +195,13 @@ main{
 }
 
 footer{
-    margin-top: 35%;
     padding:15px;
     box-shadow: 0px -5px 25px 0px rgba(0, 0, 0, 0.5);
-    color: rgb(26, 26, 26);
+    background-color: rgba(46, 46, 46, 0.842);
 }
 
 .contact{
     font-size: small;
-    font:italic;
-}
-
-.head-content a{
-    text-decoration: none;
-    color: rgb(26, 26, 26);
-}
-
-.head-content a:hover{
-    text-decoration: none;
-    color: rgb(71, 71, 71);
-}
-
-.contact a{
-    text-decoration: none;
-    color: rgb(26, 26, 26);
-}
-
-.contact a:hover{
-    text-decoration: none;
-    color: rgb(71, 71, 71);
 }
 
 .main-content h2{
@@ -195,23 +227,22 @@ footer{
     margin-right: 15%;
 }
 
-p a{
-    text-decoration: underline;
-    color: rgb(26, 26, 26);
-}
-p a:hover{
-    color: rgb(80, 80, 80);
-}
 
-.post{
-    margin:35px;
+.post-content{
+    background-color: rgba(19, 19, 19, 0.9);
+    padding:35px;
+    padding-left: 10%;
+    width: 85%;
+    padding-right: 5%;
+    box-sizing: border-box;
 }
 
 .related-post{
     width: 15%;
-    margin-top: 10%;
-    border-left: 2px ridge black;
     padding: 10px;
+    padding-top: 10%;
+    border-left: 2px solid black;
+    box-shadow: -5px 5px 20px 0px rgb(0, 0, 0);
     box-sizing: border-box;
 }
 
@@ -221,34 +252,14 @@ p a:hover{
 .related-post h5{
     margin-bottom: 15px;
 }
-.related-post a{
-    text-decoration: none;
-    color: rgb(26, 28, 109);
-    font-weight: bolder;
-}
 
-.related-post a:hover{
-    text-decoration: none;
-    color: rgb(26, 26, 26);
-    font-style: italic;
-}
+
 .float-child-desk{
     float: left;
 }
 .post-mid{
     line-height: 2em;
-    padding-left: 10%;
-    width: 85%;
-    padding-right: 5%;
-    box-sizing: border-box;
     font-size: large;
-    a{
-        text-decoration: underline;
-        color: rgb(26, 26, 26);
-    }
-    a:hover{
-        color: rgb(80, 80, 80);
-    }
     ol{
         list-style: inside decimal;
         padding-left: 15px;

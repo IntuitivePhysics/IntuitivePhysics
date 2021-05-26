@@ -8,7 +8,7 @@ plugins:
   - jekyll-paginate
   - jekyll-redirect-from
 
-permalink: /:categories/:title
+permalink: /:title
 
 author:
   name: Michael Huang
