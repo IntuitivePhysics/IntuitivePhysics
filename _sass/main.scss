@@ -341,9 +341,8 @@ footer{
     body{
         min-height: 100%;
         min-width: 100%;
+        background-position: top center;
         background-attachment: fixed;
-        width: auto;
-        height: auto;
         z-index: -100;
     }
 
