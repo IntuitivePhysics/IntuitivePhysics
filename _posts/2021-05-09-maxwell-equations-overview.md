@@ -5,7 +5,7 @@ title: Maxwell's Equations explained with Lorentz Force Law
 
 author: Michael Huang
 
-description: An intuitive explanation of Lorentz force law and Maxwell's Equations in integral form and differential force, with focus on their interconnections and individual roles.
+description: An intuitive explanation of Lorentz force law and Maxwell's Equations in integral form and differential form, with focus on their interconnections and individual roles.
 
 tags:
     - electromagnetism
