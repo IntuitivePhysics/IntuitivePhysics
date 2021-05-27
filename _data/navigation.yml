@@ -1,8 +1,8 @@
 - name: Home
   link: /
 - name: Electromagnetism
-  link: /electromagnetism.html
+  link: /electromagnetism
 - name: Mechanics
-  link: /mechanics.html
+  link: /mechanics
 - name: About
-  link: /about.html
+  link: /about
