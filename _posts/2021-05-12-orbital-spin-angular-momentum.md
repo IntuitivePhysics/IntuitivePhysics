@@ -5,7 +5,7 @@ title: Classical Physics, orbital, spin, total angular momentum, and hidden tric
 
 author: Michael Huang
 
-description: Explains the differences between the 3 classical angular momenta and their correlation. Proves spin + orbital = total.
+description: Explains the orbital angular momentum, spin angular momentum, and total angular momentum. Proves spin + orbital = total.
 
 tags:
     - mechanics

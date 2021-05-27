@@ -1,11 +1,11 @@
 ---
 layout: post
 
-title: Faraday's Law, derivation and misconceptions
+title: Faraday's Law of Electromagnetic Induction, derivation and misconceptions.
 
 author: Michael Huang
 
-description: An intuitive derivation of Faraday's Law, and some explanations of its difference from Maxwell-Faraday's Equation.
+description: An intuitive derivation of Faraday's Law of Electromagnetic Induction, and some explanations of its difference from Maxwell-Faraday's Equation.
 
 tags:
     - electromagnetism

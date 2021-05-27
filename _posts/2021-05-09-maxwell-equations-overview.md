@@ -1,11 +1,11 @@
 ---
 layout: post
 
-title: Laws of electromagnetism overview, interconnections
+title: Maxwell's Equations explained with Lorentz Force Law
 
 author: Michael Huang
 
-description: An intuitive explanation Maxwell's Equations and Lorentz force law, with focus on their interconnections and individual roles.
+description: An intuitive explanation of Lorentz force law and Maxwell's Equations in integral form and differential force, with focus on their interconnections and individual roles.
 
 tags:
     - electromagnetism
