@@ -1,13 +1,11 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
     <meta charset="utf-8">
-    <title>{{page.title}}</title>
-    <meta name="description"
-        content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
+    <title>{{ page.title }}</title>
+    {% seo title=false %}
     {% feed_meta %}
-    {% seo %}
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <script type="text/x-mathjax-config">
         MathJax.Hub.Config({
@@ -30,7 +28,7 @@
     <div class="sidebar">
         <div class="foreword">
             <h3>Michael Huang</h3>
-            <img src="/assets/images/selfie.jpeg">
+            <img src="/assets/images/selfie.jpeg" alt="Image of Michael Huang">
             <p>I am a physics student and enthusiast with an unquenchable
                 desire to learn and fully understand every physics concept!</p>
             <h3>Purpose of this blog</h3>
@@ -42,7 +40,7 @@
         <header>
             <div class="float-child">
                 <a href="/index.html">
-                    <h1><img class="logo" src="/assets/images/Intuitive-Physics.jpeg" alt="Intuitive Physics Logo"></h1>
+                    <img class="logo" src="/assets/images/Intuitive-Physics.jpeg" alt="Intuitive Physics Logo">
                 </a>
             </div>
             <div class="float-child">

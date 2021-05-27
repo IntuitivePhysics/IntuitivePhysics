@@ -30,7 +30,7 @@ description: Explore the intuition and interconnection of Maxwell's Equations an
         <div class="clr"></div>
     </div>
     <div class="main-content">
-        <h2>All E&M Posts</h2>
+        <h1>All E&M Posts</h1>
         <div class="flex-container post-container">
             {% for post in site.posts %}
             {% if post.tags contains "electromagnetism" %}
@@ -41,5 +41,26 @@ description: Explore the intuition and interconnection of Maxwell's Equations an
             {% endif %}
             {% endfor %}
         </div>
+
+        {% assign count = 0 %}
+        {% for post in site.posts %}
+        {% if count>=1 %}
+            {% break %}
+        {% endif %}
+        {% if post.tags contains "electromagnetism" %}
+        {% assign count = count | plus: 1 %}
+        <h6 class="head-sep">Preview of Recent Post</h6>
+        <div>
+            <div class="post-head">
+                <h1><a href="{{ post.url }}">{{ post.title }}</a></h1>
+                <p>Written {{ post.date | date_to_string }} by {{ post.author }}</p>
+            </div>
+            <hr>
+            <div class="post-mid">
+                {{ post.content }}
+            </div>
+        </div>
+        {% endif %}
+        {% endfor %}
     </div>
 </div>

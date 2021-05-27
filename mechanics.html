@@ -28,7 +28,7 @@ description: Intuitions, tricks, and quirks of classical mechanics from Newtonia
         <div class="clr"></div>
     </div>
     <div class="main-content">
-        <h2>All Mechanics Posts</h2>
+        <h1>All Mechanics Posts</h1>
         <div class="flex-container post-container">
             {% for post in site.posts %}
             {% if post.tags contains "mechanics" %}
@@ -39,5 +39,26 @@ description: Intuitions, tricks, and quirks of classical mechanics from Newtonia
             {% endif %}
             {% endfor %}
         </div>
+
+        {% assign count = 0 %}
+        {% for post in site.posts %}
+        {% if count>=1 %}
+            {% break %}
+        {% endif %}
+        {% if post.tags contains "mechanics" %}
+        {% assign count = count | plus: 1 %}
+        <h6 class="head-sep">Preview of Recent Post</h6>
+        <div>
+            <div class="post-head">
+                <h1><a href="{{ post.url }}">{{ post.title }}</a></h1>
+                <p>Written {{ post.date | date_to_string }} by {{ post.author }}</p>
+            </div>
+            <hr>
+            <div class="post-mid">
+                {{ post.content }}
+            </div>
+        </div>
+        {% endif %}
+        {% endfor %}
     </div>
 </div>
