@@ -41,7 +41,7 @@ This is part 1 of two articles on Faraday's Law. In the first part, I attempt to
 
 ### Faraday's Law
 
-See [Maxwell's Equations](https://intuitivephysics.me/maxwell-equations-overview) for a brief and intuitive intro to all Maxwell's Equations and Lorentz force law.
+See [Maxwell's Equations](/maxwell-equations-overview) for a brief and intuitive intro to all Maxwell's Equations and Lorentz force law.
 
 I've read 3 different textbooks on electromagnetism. Each provided a different description of what it defines as Faraday's Law.
 

@@ -88,7 +88,7 @@ To be more precise, we may separate the discussion of the divergence and curl of
 
 $\nabla\times \textbf{E} = -\frac{\partial \textbf{B}}{\partial t}$
 
-Note its difference from [Faraday's Law](https://intuitivephysics.me/faraday-derivation-part1). This law governs how a changing $\textbf{B}$ field affects $\textbf{E}$ field, or generate a curl, specifically. So, it represents $\textbf{B}\rightarrow \textbf{E}$ direction of the interaction.
+Note its difference from [Faraday's Law](/faraday-derivation-part1). This law governs how a changing $\textbf{B}$ field affects $\textbf{E}$ field, or generate a curl, specifically. So, it represents $\textbf{B}\rightarrow \textbf{E}$ direction of the interaction.
 
 
 
