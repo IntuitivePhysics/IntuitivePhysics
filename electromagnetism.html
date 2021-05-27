@@ -5,6 +5,7 @@ description: Explore the intuition and interconnection of Maxwell's Equations an
 ---
 
 <div class="main-left">
+    <h1>Electromagnetism</h1>
     <div class="head-content flex-container">
         <div class="flex-child foreword half-screen-desk">
             <p>
@@ -30,7 +31,7 @@ description: Explore the intuition and interconnection of Maxwell's Equations an
         <div class="clr"></div>
     </div>
     <div class="main-content">
-        <h1>All E&M Posts</h1>
+        <h2>All E&M Posts</h2>
         <div class="flex-container post-container">
             {% for post in site.posts %}
             {% if post.tags contains "electromagnetism" %}
@@ -52,7 +53,7 @@ description: Explore the intuition and interconnection of Maxwell's Equations an
         <h6 class="head-sep">Preview of Recent Post</h6>
         <div>
             <div class="post-head">
-                <h1><a href="{{ post.url }}">{{ post.title }}</a></h1>
+                <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
                 <p>Written {{ post.date | date_to_string }} by {{ post.author }}</p>
             </div>
             <hr>

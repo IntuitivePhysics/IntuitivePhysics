@@ -5,7 +5,8 @@ description: Focused on fascinating yet often omitted insights into classical ph
 ---
 <div class="main-left">
     <div class="main-content">
-        <h1>Featured Posts</h1>
+        <h1>Homepage</h1>
+        <h2 class="head-sep">Featured Posts</h2>
         <div class="flex-container post-container">
             {% for post in site.posts %}
             <a href="{{ post.url }}" class="flex-child post-box">
@@ -19,7 +20,7 @@ description: Focused on fascinating yet often omitted insights into classical ph
         <h6 class="head-sep">Preview of Recent Post</h6>
         <div>
             <div class="post-head">
-                <h1><a href="{{ post.url }}">{{ post.title }}</a></h1>
+                <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
                 <p>Written {{ post.date | date_to_string }} by {{ post.author }}</p>
             </div>
             <hr>
