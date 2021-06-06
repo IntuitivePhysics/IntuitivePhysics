@@ -126,6 +126,8 @@ As we will see, for the math to workout correctly, we also need to abandon the [
 
 ### Mathematical Derivation of Length Contraction and Time Dilation
 
+![setup](../assets/images/setup.JPG)
+
 Therefore, the act of boosting from $S_1$ to $S_2$ changes the state of motion of positive charges from velocity $v$ to stationary, and changes the state of motion of negative charges from stationary to moving with velocity $v$. If this change of motion decrease $\Delta x^-$ to a factor of $\lambda$, it should symmetrically increase $\Delta x^+$ by a factor of $\frac{1}{\lambda}$. 
 
 Thus, we can write $\Delta x^+_1=\Delta x^-_1=\Delta x_1$. 
