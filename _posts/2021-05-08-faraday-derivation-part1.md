@@ -209,9 +209,11 @@ To obtain the complete loop version of Faraday's Law, we must analyze $\mathcal{
 
 Luckily, that's given simply by the [Maxwell-Faraday's Law](#fourth-definition).
 
-Recall	$\mathcal{E_{induced}}=\oint\limits_{\partial \sigma}E\cdot dl=-\iint\limits_{\sigma} \frac{\partial B}{\partial t}\cdot dA =-\frac{\partial \phi_{B\space due \space to \space change\space in\space B}}{\partial t}$
+Recall	$\mathcal{E_{induced}}=\oint\limits_{\partial \sigma}E\cdot dl$
 
+$=-\iint\limits_{\sigma} \frac{\partial B}{\partial t}\cdot dA$
 
+$=-\frac{\partial \phi_{B\space due \space to \space change\space in\space B}}{\partial t}$
 
 Now we add $\mathcal{E_{motional}}, \space \mathcal{E_{induced}}$.
 
