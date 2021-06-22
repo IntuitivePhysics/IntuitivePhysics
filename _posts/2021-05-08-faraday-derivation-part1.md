@@ -95,7 +95,8 @@ The electromotive force (EMF) we defined here is the **net EMF**.
 
 Since there're two parts to $F$, specifically $F=F_E+F_B$, we can separate the electromagnetic force into electrostatic force and magnetic force.
 
-$\mathcal{E}_s = \frac{1}{q}\int\limits_s F\cdot dl=\frac{1}{q}\int\limits_s F_E\cdot dl + \frac{1}{q}\int\limits_s F_B\cdot dl$
+$\mathcal{E}_s = \frac{1}{q}\int\limits_s F\cdot dl$
+$=\frac{1}{q}\int\limits_s F_E\cdot dl + \frac{1}{q}\int\limits_s F_B\cdot dl$
 
 Recall Lorentz force law, $F_B=qv\times B, \space F_E=qE$ (note $v,B,E$ are all vectors, so are $F_B, F_E$). We plug that in, notice the $q$ cancels (it should, because that's the point of the $\frac{1}{q}$ in the definition)
 

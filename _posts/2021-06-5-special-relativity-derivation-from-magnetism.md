@@ -146,11 +146,15 @@ $E_2 = \frac{\rho_2}{2\pi r\epsilon_0}$
 
 Here $\rho_2=\rho^-_2-\rho^+_2$ and the electric field points towards the wire. 
 
-Now, as $q$ travels from $A\rightarrow B$, this $E_2$ accelerates $q$ towards the wire. It will change its momentum by $\Delta p_2=\Delta t_2 F_2=\Delta t_2 q E_2=\frac{\rho_2 q \Delta t_2}{2\pi r\epsilon_0}=\frac{(\rho^-_2 - \rho^+_2) q \Delta t_2}{2\pi r\epsilon_0}$
+Now, as $q$ travels from $A\rightarrow B$, this $E_2$ accelerates $q$ towards the wire. It will change its momentum by 
+$\Delta p_2=\Delta t_2 F_2=\Delta t_2 q E_2$
+$=\frac{\rho_2 q \Delta t_2}{2\pi r\epsilon_0}$
+$=\frac{(\rho^-_2 - \rho^+_2) q \Delta t_2}{2\pi r\epsilon_0}$
 
 Now if we return to $S_1$, we can compute $\Delta p_1$.
 
-$\Delta p_1=\Delta t_1 F_1 = \Delta t_1 q v\times B_1=\frac{\mu_0qv^2\rho^+_1\Delta t_1}{2\pi r}$
+$\Delta p_1=\Delta t_1 F_1 = \Delta t_1 q v\times B_1$
+$=\frac{\mu_0qv^2\rho^+_1\Delta t_1}{2\pi r}$
 
 Due to the Principle of Relativity and independence of spatial dimensions, our experiment along the y direction should yield the same result regardless of whether we are in $S_1$ or $S_2$.
 

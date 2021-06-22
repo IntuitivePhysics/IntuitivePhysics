@@ -98,7 +98,8 @@ Remember by definition $p_{net}=p_{CoM}$. You can also think of it as all the in
 
 So
 
-$L_{net}=r_{to\space CoM}\times p_{CoM}+\sum r_{i \space from \space CoM}\times p_i$
+$L_{net}=r_{to\space CoM}\times p_{CoM}$
+$+\sum r_{i \space from \space CoM}\times p_i$
 
 Do you recognize the two terms? Yes, the first if $L_{orbital}$ and the second is $L_{spin}$!
 
