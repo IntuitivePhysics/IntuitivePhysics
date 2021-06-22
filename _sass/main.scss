@@ -11,20 +11,10 @@
     color:rgb(204, 200, 191)
 }
 
-body::before {
-    position: fixed;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    z-index: -1;
-    content: '';
-    background-image: url(/assets/images/wallpaper.jpg);
-    background-attachment: fixed;
-    //background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
-  }
+body {
+    background: url(/assets/images/wallpaper.jpg) center center no-repeat fixed;
+    background-size: cover;
+}
 
 .mainbody{
     width: 75%;
@@ -303,6 +293,12 @@ footer{
     }
 }
 
+@supports (-webkit-touch-callout: none) {
+    body {
+        background: url(/assets/images/wallpaper.jpg) center top no-repeat scroll;
+        background-size: auto 100vh;
+    }
+}
 
 @media only screen and (max-width: 768px) {
     
