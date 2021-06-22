@@ -11,22 +11,6 @@
     color:rgb(204, 200, 191)
 }
 
-// body:before {
-//     content: "";
-//     display: block;
-//     position: fixed;
-//     left: 0;
-//     top: 0;
-//     width: 100%;
-//     height: 100%;
-//     z-index: -10;
-//     background: url(/assets/images/wallpaper.jpg) no-repeat center center;
-//     -webkit-background-size: cover;
-//     -moz-background-size: cover;
-//     -o-background-size: cover;
-//     background-size: cover;
-// }
-
 body::before {
     position: fixed;
     top: 0;
@@ -36,7 +20,8 @@ body::before {
     z-index: -1;
     content: '';
     background-image: url(/assets/images/wallpaper.jpg);
-    background-size: cover;
+    background-attachment: fixed;
+    //background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
   }
@@ -73,7 +58,7 @@ header ul{
     list-style: none;
 }
 
-header li{
+nav li{
     display: inline;
     padding-left: 10px;
 }
@@ -85,6 +70,10 @@ a{
 }
 a:hover{
     color:rgb(187, 195, 202);
+}
+
+nav a{
+    font-size: larger;
 }
 
 .selected{
@@ -316,6 +305,7 @@ footer{
 
 
 @media only screen and (max-width: 768px) {
+    
     .sidebar{
         display: none;
     }
@@ -342,8 +332,8 @@ footer{
         border: 2px solid black;
         box-shadow: 0px 5px 20px 0px black;
     }
-    .post-mid{
-        font-size: medium;
+    p{
+        font-size: large;
     }
     .head-content{
         margin-left: 0;
