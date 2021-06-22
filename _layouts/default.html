@@ -7,7 +7,7 @@
     {% seo title=false %}
     {% feed_meta %}
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <script type="text/x-mathjax-config">
+    <script type="text/x-mathjax-config" defer>
         MathJax.Hub.Config({
           tex2jax: {
             inlineMath: [['$','$'], ['\\(','\\)']],
@@ -15,21 +15,21 @@
           }
         });
         </script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML"
-        type="text/javascript"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML"
+        type="text/javascript" defer></script>
     <link rel="stylesheet" href="/assets/css/style.css">
-    <link rel="shortcut icon" type="image/jpeg" href="/assets/images/Intuitive-Physics.jpeg">
+    <link rel="shortcut icon" type="image/webp" href="/assets/images/Intuitive-Physics.webp">
 
     {% include analytics.html %}
 </head>
 
 
 <body>
-    <img src="/assets/images/wallpaper.jpg" class='bgimage'>
+    <img src="/assets/images/wallpaper.webp" class='bgimage'>
     <div class="sidebar">
         <div class="foreword">
             <h3>Michael Huang</h3>
-            <img src="/assets/images/selfie.jpeg" alt="Image of Michael Huang">
+            <img src="/assets/images/selfie.webp" alt="Image of Michael Huang">
             <p>I am a physics student and enthusiast with an unquenchable
                 desire to learn and fully understand every physics concept!</p>
             <h3>Purpose of this blog</h3>
@@ -41,7 +41,7 @@
         <header>
             <div class="float-child">
                 <a href="/index.html">
-                    <img class="logo" src="/assets/images/Intuitive-Physics.jpeg" alt="Intuitive Physics Logo">
+                    <img class="logo" src="/assets/images/Intuitive-Physics.webp" alt="Intuitive Physics Logo">
                 </a>
             </div>
             <div class="float-child">
