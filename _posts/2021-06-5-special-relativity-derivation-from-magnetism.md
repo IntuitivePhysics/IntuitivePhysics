@@ -118,7 +118,7 @@ Therefore something is wrong since the Principle of Relativity is broken: for $S
 
 The flaw occurs when we assume $\Delta x^+_2=\Delta x^-_2$.
 
-In other words, we were wrong to assume that length is absolute. In other words, it must be that $\Delta x_2^+\not = \Delta x_1^+$ and $\Delta x_2^-\not = \Delta x_1^-$. Length of objects cannot be the same under all reference frames! In fact, given the knowledge that $q$ is attracted towards the wire in $S_1$, we know that $\rho^+_2<\rho^-_2$ and $\Delta x^+_2>\Delta x^-_2$. How is this possible? Does charges undergo motion (congregate together for negative charges and spacing out for positive charges) when we shift the frame of reference? Impossible. The only plausible explanation is that length contracted for the now moving negative charges and length expanded for the now stationary positive charges. 
+In other words, we were wrong to assume that length is absolute. In other words, it must be that $\Delta x_2^+\ne \Delta x_1^+$ and $\Delta x_2^-\neq \Delta x_1^-$. Length of objects cannot be the same under all reference frames! In fact, given the knowledge that $q$ is attracted towards the wire in $S_1$, we know that $\rho^+_2<\rho^-_2$ and $\Delta x^+_2>\Delta x^-_2$. How is this possible? Does charges undergo motion (congregate together for negative charges and spacing out for positive charges) when we shift the frame of reference? Impossible. The only plausible explanation is that length contracted for the now moving negative charges and length expanded for the now stationary positive charges. 
 
 Therefore, the first principle of Galilean Relativity that we must abandon is the [absoluteness of length](#absoluteness-of-length).
 
