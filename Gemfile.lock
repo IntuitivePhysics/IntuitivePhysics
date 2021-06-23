@@ -4,12 +4,13 @@ GEM
     addressable (2.7.0)
       public_suffix (>= 2.0.2, < 5.0)
     colorator (1.1.0)
-    concurrent-ruby (1.1.8)
+    concurrent-ruby (1.1.9)
     em-websocket (0.5.2)
       eventmachine (>= 0.12.9)
       http_parser.rb (~> 0.6.0)
     eventmachine (1.2.7)
-    ffi (1.15.0)
+    execjs (2.8.1)
+    ffi (1.15.3)
     forwardable-extended (2.6.0)
     http_parser.rb (0.6.0)
     i18n (1.8.10)
@@ -42,8 +43,13 @@ GEM
       jekyll (>= 3.7, < 5.0)
     jekyll-watch (2.2.1)
       listen (~> 3.0)
+    katex (0.8.0)
+      execjs (~> 2.7)
     kramdown (2.3.1)
       rexml
+    kramdown-math-katex (1.0.1)
+      katex (~> 0.4)
+      kramdown (~> 2.0)
     kramdown-parser-gfm (1.1.0)
       kramdown (~> 2.0)
     liquid (4.0.3)
@@ -76,6 +82,7 @@ DEPENDENCIES
   jekyll-redirect-from
   jekyll-seo-tag
   jekyll-sitemap
+  kramdown-math-katex
 
 BUNDLED WITH
-   2.2.17
+   2.2.20

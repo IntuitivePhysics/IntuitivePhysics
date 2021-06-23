@@ -8,6 +8,10 @@ plugins:
   - jekyll-paginate
   - jekyll-redirect-from
 
+markdown: kramdown
+kramdown:
+    math_engine: katex
+    
 permalink: /:title
 
 author:

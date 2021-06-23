@@ -77,18 +77,18 @@ But things break down when Maxwell's Equations and Lorentz Force Law came along,
 #### Maxwell's Equations and Lorentz Force Law
 
 $$
-\iint_{\delta\sigma}\textbf{E}\cdot \textbf{dA}=\frac{Q_\sigma}{\epsilon_0}
+\iint_{\delta\sigma}\bold{E}\cdot \bold{dA}=\frac{Q_\sigma}{\epsilon_0}
 \\
-\iint_{\delta\sigma}\textbf{B}\cdot \textbf{dA}=0
+\iint_{\delta\sigma}\bold{B}\cdot \bold{dA}=0
 \\
-\int_{\delta\sigma} \textbf{E}\cdot \textbf{dl}=-\frac{\partial \textbf{\Phi_B}}{\partial t}
+\int_{\delta\sigma} \bold{E}\cdot \bold{dl}=-\frac{\partial \bold{\Phi_B}}{\partial t}
 \\
-\int_{\delta\sigma} \textbf{B}\cdot \textbf{dl} = \mu_0 \textbf{I} + \mu_0\epsilon_0 \frac{\partial \textbf{\Phi_E}}{\partial t}
+\int_{\delta\sigma} \bold{B}\cdot \bold{dl} = \mu_0 \bold{I} + \mu_0\epsilon_0 \frac{\partial \bold{\Phi_E}}{\partial t}
 \\
-\textbf{F}=q(\textbf{E}+\textbf{v} \times\textbf{B})
+\bold{F}=q(\bold{E}+\bold{v} \times\bold{B})
 $$
 
-Principle of Relativity governs that laws of electromagnetism should be invariant under transformation of coordinate system. For these laws to be invariant, we only need $\textbf{E}+\textbf{v}\times \textbf{B}$ to be exert the same effect on charged particles in both frames of references. It doesn't need $E=E'$ or $B=B'$. In fact, $E+v\times B$ doesn't necessarily equate $E'+v'\times B'$. It's only required that the **effects** they produce are the same, which we will explore in greater detail later.
+Principle of Relativity governs that laws of electromagnetism should be invariant under transformation of coordinate system. For these laws to be invariant, we only need $\bold{E}+\bold{v}\times \bold{B}$ to be exert the same effect on charged particles in both frames of references. It doesn't need $E=E'$ or $B=B'$. In fact, $E+v\times B$ doesn't necessarily equate $E'+v'\times B'$. It's only required that the **effects** they produce are the same, which we will explore in greater detail later.
 
 ### Failure of Galilean Relativity
 
@@ -224,8 +224,11 @@ If we make speed of light the standard unit for speed (so $c=1$), full Lorentz T
 
 
 $$
-x'=\frac{x+vt}{\sqrt{1-v^2}}\\
-t'=\frac{t+vx}{\sqrt{1-v^2}}\\
+x'=\frac{x+vt}{\sqrt{1-v^2}}
+$$
+
+$$
+t'=\frac{t+vx}{\sqrt{1-v^2}}
 $$
 
 

@@ -32,7 +32,7 @@ excerpt: So adding spin angular momentum on top of orbital angular momentum is l
 
 Angular momentum is a concept meaningless unless defined relative to a point. Let's call this point our origin $O$. Now, we will place our frame of reference on this point for all later discussions.
 
-Angular momentum of a point particle relative to $O$ is $\textbf{L}=\textbf{r}\times \textbf{p}$ where $\textbf{r}$ points from $O$ to this point particle and $\textbf{p}$ is the momentum of the particle relative to $O$.  Angular momentum of a system of point particles is just the summation of individual angular momentum.
+Angular momentum of a point particle relative to $O$ is $\bold{L}=\bold{r}\times \bold{p}$ where $\bold{r}$ points from $O$ to this point particle and $\bold{p}$ is the momentum of the particle relative to $O$.  Angular momentum of a system of point particles is just the summation of individual angular momentum.
 
 Angular momentum is the rotational analogue of momentum.
 
