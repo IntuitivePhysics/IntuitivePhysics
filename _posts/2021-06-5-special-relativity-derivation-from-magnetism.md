@@ -17,8 +17,6 @@ tags:
     - electromagnetism
     - mechanics
 
-katex: True
-
 excerpt: we concluded that the only way to resolve to paradox is the forego the absoluteness of length and time across different reference frames. And then we computed exactly how length and time will change exactly in a lorentz boost...
 
 ---

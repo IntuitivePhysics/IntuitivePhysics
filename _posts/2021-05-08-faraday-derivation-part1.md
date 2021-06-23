@@ -17,8 +17,6 @@ tags:
 
 excerpt: The only fundamental theorem of electromagnetims we used above is the Lorentz Force Law. So, in other words, this Motional Faraday's Law should have equal predictive power to the Lorentz Force Law...
 
-katex: True
-
 redirect_from:
     - /2021/05/08/Faradays-Law,-derivation-and-misconceptions.html
     - /electromagnetism/Faradays-Law,-derivation-and-misconceptions/
@@ -51,7 +49,7 @@ I've read 3 different textbooks on electromagnetism. Each provided a different d
 
 ##### First Definition:
 
-$\mathcal{E}=-\frac{\partial \phi_{B\space{swept}}}{\partial t}$, or in other words, the **net EMF** equals the negative of the amount of **"magnetic field lines"** swept across by the "wire" per unit time.
+$$\mathcal{E}=-\frac{\partial \phi_{B\space{swept}}}{\partial t}$$, or in other words, the **net EMF** equals the negative of the amount of **"magnetic field lines"** swept across by the "wire" per unit time.
 
 
 
