@@ -15,6 +15,8 @@ tags:
     - orbital
     - trick
 
+katex: True
+
 excerpt: So adding spin angular momentum on top of orbital angular momentum is like composing these 2 angular motions about 2 different origins together...
 
 ---

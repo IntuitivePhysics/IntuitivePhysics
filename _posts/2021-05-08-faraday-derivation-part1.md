@@ -17,6 +17,8 @@ tags:
 
 excerpt: The only fundamental theorem of electromagnetims we used above is the Lorentz Force Law. So, in other words, this Motional Faraday's Law should have equal predictive power to the Lorentz Force Law...
 
+katex: True
+
 redirect_from:
     - /2021/05/08/Faradays-Law,-derivation-and-misconceptions.html
     - /electromagnetism/Faradays-Law,-derivation-and-misconceptions/
