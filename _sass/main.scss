@@ -7,28 +7,53 @@
 *{
     padding:0;
     margin:0;
-    color:rgb(204, 200, 191)
+    color:rgb(204, 200, 191);
 }
 
 p{
+    font-size: 1.2em;
+    font-family: Arial, Helvetica, sans-serif;
+}
+li{
+    font-size: 1.2em;
+    font-family: Arial, Helvetica, sans-serif;
+}
+h1{
+    font-size: 2em;
+    margin-top: 1.5em;
+    font-family: Arial, Helvetica, sans-serif;
+}
+h2{
+    font-size: 1.8em;
+    margin-top: 1.5em;
+    font-family: Arial, Helvetica, sans-serif;
+}
+h3{
+    font-size: 1.6em;
+    margin-top: 1.5em;
+    font-family: Arial, Helvetica, sans-serif;
+}
+h4{
+    font-size: 1.4em;
+    margin-top: 1.5em;
+    font-family: Arial, Helvetica, sans-serif;
+}
+h5{
+    font-size: 1.3em;
+    margin-top: 1.5em;
     font-family: Arial, Helvetica, sans-serif;
 }
 
-// body {
-//     background: url(/assets/images/wallpaper.jpg) center center no-repeat fixed;
-//     background-size: cover;
-// }
+.no-top{
+    margin-top: 0;
+}
+
 body .bgimage {
     position: fixed;
     width: 100%;
     height: 100%;
     object-fit: cover;
-    z-index: -1;
-}
-
-.mainbody{
-    width: 100%;
-    margin-left: 0;
+    z-index: -10;
 }
 
 header{
@@ -40,21 +65,13 @@ header{
     float: left;
 }
 
-h3{
-    margin:15px;
-}
-
-header h1{
-    margin:10px;
-}
-
 header nav{
     margin-top: 20px;
     margin-left: 20px;
     margin-bottom: 15px;
 }
 
-header ul{
+ul{
     list-style: none;
 }
 
@@ -63,35 +80,24 @@ nav li{
     padding-left: 25px;
 }
 
-
 a{
     text-decoration: none;
     color:aliceblue;
-}
-a:hover{
-    color:rgb(187, 195, 202);
+    font-size: 1em;
 }
 
-nav a{
-    font-size: larger;
+a:hover{
+    color:rgb(187, 195, 202);
 }
 
 .selected{
     font-weight: bolder;
 }
 
-main{
-    overflow: hidden;
-    position: relative;
-}
-
 .main-left{
-    width:90%;
-    margin-left: 5%;
-    margin-right: 5%;
     border: 2px solid black;
     box-shadow: 0px 0px 30px 0px rgb(0, 0, 0);
-    padding:35px;
+    padding:15px;
     float:left;
     position: inherit;
     background-color: rgba(19, 19, 19, 0.8);
@@ -103,17 +109,18 @@ main{
     display: none;
 }
 
-.foreword{
-    font-size: large;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    padding:10px;
-    line-height: 1.4em;
-    box-sizing: border-box;
+.nice-text{
+    p{
+        margin-top: 0.4em;
+    }
+    line-height: 2em;
+    padding: 20px;
 }
 
-.main-content{
-    margin-top: 25px;
+.condensed{
+    line-height: 1.5em;
 }
+
 
 .flex-container {
     display: flex;
@@ -121,6 +128,10 @@ main{
     flex-wrap: wrap;
     align-items: flex-start;
     width: 100%;
+}
+
+.size-down{
+    font-size: 1em;
 }
 
 .space-out{
@@ -151,40 +162,18 @@ img{
     box-shadow: 5px 5px 30px 0px rgb(0, 0, 0);
     border-radius: 5px;
     background-color: rgb(37, 37, 37);
-    padding: 15px;
+    padding: 25px;
     flex-basis: content;
     box-sizing: border-box;
 }
 
-
-.post-container a{
-    display: block;
-    text-decoration: none;
-    font-family: 'Courier New', Courier;
-}
-
-.post-container a:hover{
-    box-shadow: 5px 5px 20px 0px rgb(0, 0, 0);
+.post-container .post-box:hover{
+    box-shadow: 5px 5px 10px 0px rgb(0, 0, 0);
     background-color: rgb(43, 43, 43);
 }
 
 .half-screen-desk{
     width: 400px;
-}
-
-.post-box h3{
-    padding-bottom: 10px;
-    border-bottom: 1px solid black;
-    margin-bottom: 5px;
-}
-
-.post-head{
-    margin-top: 35px;
-    margin-bottom: 35px;
-}
-.post-head h1{
-    line-height: 1.4em;
-    margin-bottom: 15px;
 }
 
 .padder{
@@ -198,54 +187,19 @@ img{
     margin-bottom:15px;
 }
 
+main{
+    position: relative;
+}
+
 footer{
     padding:15px;
-    box-shadow: 0px -5px 25px 0px rgba(0, 0, 0, 0.5);
+    box-shadow: 0px -10px 20px 0px rgb(0, 0, 0);
     background-color: rgba(46, 46, 46, 0.842);
 }
 
-.contact{
-    font-size: small;
-}
-
-.main-content h2{
-    margin-bottom: 10px;
-}
-
-p{
-    font-size: large;
-}
-
-.main-content p{
-    line-height: 2em;
-    padding-bottom: 10px;
-}
-
-
-.head-content p{
-    line-height: 2em;
-    padding-bottom: 10px;
-}
-
-.head-content h2{
-    margin-bottom: 10px;
-}
-.head-content{
-    margin-left: 0;
-    margin-right: 0;
-}
-
-.head-sep{
-    margin-top: 10%;
-}
-
 .post-content{
-    margin-left: 2%;
-    margin-right: 2%;
-    padding:65px;
-    padding-left: 25px;
-    padding-right: 25px;
-    width: 96%;
+    padding-top:40px;
+    padding-bottom: 40px;
     border: 2px solid black;
     box-shadow: 0px 5px 20px 0px black;
     background-color: rgba(19, 19, 19, 0.9);
@@ -253,30 +207,31 @@ p{
 }
 
 .related-post{
-    width: auto;
+    background-color: rgba(19, 19, 19, 0.699);
+    width: 80%;
+    margin-left: 10%;
     border: none;
-    box-shadow: none;
+    border: 2px solid black;
+    box-shadow: 0px 0px 20px 5px rgb(0, 0, 0);
     box-sizing: border-box;
-    margin-left: 5%;
-    padding: 10px;
-    padding-top: 10%;
-    line-height: 2em;
+    padding: 15px;
+    margin-top: 10%;
 }
 
-.related-post h4{
-    margin-bottom: 15px;
-}
-.related-post h5{
-    margin-bottom: 15px;
+.sep-list li{
+    margin-top: 25px;
+    list-style: none;
 }
 
+.sep-list-small li{
+    margin-top: 10px;
+    list-style: none;
+}
 
 .float-child-desk{
     float: none;
 }
 .post-mid{
-    line-height: 2em;
-    font-size: large;
     ol{
         list-style: inside decimal;
         padding-left: 15px;
@@ -284,25 +239,6 @@ p{
     ul{
         list-style: inside square;
         padding-left: 15px;
-    }
-    h3{
-        margin-top:30px;
-        font-size: x-large;
-    }
-    h2{
-        margin-top:35px;
-        font-size: xx-large;
-    }
-    h4{
-        margin-top:25px;
-        font-size: larger;
-    }
-    h5{
-        margin-top:15px;
-    }
-    p{
-        margin-left: 15px;
-        margin-top: 20px;
     }
     img{
         background: rgb(202, 202, 202);
@@ -319,7 +255,7 @@ p{
         box-shadow: 5px 5px 20px 0px rgb(0, 0, 0);
         width:25%;
         height: 100%;
-        overflow-y: scroll;
+        overflow-y: hidden;
     }
     .mainbody{
         width: 75%;
@@ -327,6 +263,7 @@ p{
     }
     .main-left{
         width: 80%;
+        padding: 35px;
         box-sizing: border-box;
         margin-left: 0;
         margin-right: 0;
@@ -334,26 +271,22 @@ p{
         box-shadow: none;
     }
     .main-right{
-        display: block;
+        display: inline;
+        position: absolute;
         height: 100%;
         width: 20%;
-        margin-left:80%;
-        position: absolute;
         float:left;
         border-left:2px solid black;
-        box-shadow: -5px -5px 20px 0px rgb(0, 0, 0);
+        box-shadow: -20px 0px 20px -10px rgb(0, 0, 0);
         box-sizing: border-box;
     }
     .post-content{
         width: 85%;
-        padding: 65px;
+        padding: 35px;
         margin: 0;
         box-sizing: border-box;
     }
-    p{
-        font-size: medium;
-    }
-    .head-content{
+    .side-margin{
         margin-left: 15%;
         margin-right: 15%;
     }
@@ -363,9 +296,11 @@ p{
     .related-post{
         width: 15%;
         border-left: 2px solid black;
-        box-shadow: -5px 5px 20px 0px rgb(0, 0, 0);
+        box-shadow: -5px 5px 10px 0px rgb(0, 0, 0);
+        border: none;
+        background: none;
         margin-left: 0;
-        line-height: 1em;
+        line-height: 1.2em;
     }
 
 }

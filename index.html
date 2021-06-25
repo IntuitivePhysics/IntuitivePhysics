@@ -4,30 +4,27 @@ title: Intuitive Physics Home
 description: Focused on fascinating yet often omitted insights into classical physics.
 ---
 <div class="main-left">
-    <div class="main-content">
-        <h1>Understand Physics Deeply and Intuitively</h1>
-        <h2 class="head-sep">Featured Posts</h2>
-        <div class="flex-container post-container">
-            {% for post in site.posts %}
-            <a href="{{ post.url }}" class="flex-child post-box">
-                <h3>{{ post.title }}</h3>
-                <p>{{ post.description }}</p>
-            </a>
-            {% endfor %}
-        </div>
-
-        {% for post in site.posts limit:1 %}
-        <h6 class="head-sep">Preview of Recent Post</h6>
-        <div>
-            <div class="post-head">
-                <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
-                <p>Written {{ post.date | date_to_string }} by {{ post.author }}</p>
-            </div>
-            <hr>
-            <div class="post-mid">
-                {{ post.content }}
-            </div>
-        </div>
+    <h1>Understand Physics Deeply and Intuitively</h1>
+    <br>
+    <h2>Featured Posts</h2>
+    <div class="flex-container post-container">
+        {% for post in site.posts %}
+        <a href="{{ post.url }}" class="flex-child post-box nice-text size-down">
+            <h5 class="no-top">{{ post.title }}</h5>
+            <p>{{ post.description }}</p>
+        </a>
         {% endfor %}
     </div>
+
+    {% for post in site.posts limit:1 %}
+    <br>
+    <h6>Preview of Recent Post</h6>
+    <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+    <p>Written {{ post.date | date_to_string }} by {{ post.author }}</p>
+    <hr>
+    <br>
+    <div class="post-mid nice-text">
+        {{ post.content }}
+    </div>
+    {% endfor %}
 </div>

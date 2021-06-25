@@ -6,12 +6,11 @@ description: Intuitions, tricks, and quirks of classical mechanics from Newtonia
 
 <div class="main-left">
     <h1>Newtonian Mechanics' Tricks and Wonders</h1>
-    <div class="head-content flex-container">
-        <div class="flex-child foreword half-screen-desk">
+    <div class="side-margin flex-container">
+        <div class="flex-child nice-text half-screen-desk">
             <p>
                 In this section, we will explore classical mechanics from Newtonian to Lagrangian. See how many
-                equations on
-                the right you can recognize, they all represent Newton's $2^{nd}$ Law!
+                equations you can recognize, they all represent Newton's $2^{nd}$ Law!
             </p>
         </div>
         <div class="flex-child half-screen-desk">
@@ -28,38 +27,34 @@ description: Intuitions, tricks, and quirks of classical mechanics from Newtonia
         </div>
         <div class="clr"></div>
     </div>
-    <div class="main-content">
-        <h2>All Mechanics Posts</h2>
-        <div class="flex-container post-container">
-            {% for post in site.posts %}
-            {% if post.tags contains "mechanics" %}
-            <a href="{{ post.url }}" class="flex-child post-box">
-                <h3>{{ post.title }}</h3>
-                <p>{{ post.description }}</p>
-            </a>
-            {% endif %}
-            {% endfor %}
-        </div>
-
-        {% assign count = 0 %}
+    <h2>All Mechanics Posts</h2>
+    <div class="flex-container post-container">
         {% for post in site.posts %}
-        {% if count>=1 %}
-            {% break %}
-        {% endif %}
         {% if post.tags contains "mechanics" %}
-        {% assign count = count | plus: 1 %}
-        <h6 class="head-sep">Preview of Recent Post</h6>
-        <div>
-            <div class="post-head">
-                <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
-                <p>Written {{ post.date | date_to_string }} by {{ post.author }}</p>
-            </div>
-            <hr>
-            <div class="post-mid">
-                {{ post.content }}
-            </div>
-        </div>
+        <a href="{{ post.url }}" class="flex-child post-box nice-text size-down">
+            <h5 class="no-top">{{ post.title }}</h5>
+            <p>{{ post.description }}</p>
+        </a>
         {% endif %}
         {% endfor %}
     </div>
+
+    {% assign count = 0 %}
+    {% for post in site.posts %}
+    {% if count>=1 %}
+    {% break %}
+    {% endif %}
+    {% if post.tags contains "mechanics" %}
+    {% assign count = count | plus: 1 %}
+    <br>
+    <h6>Preview of Recent Post</h6>
+    <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+    <p>Written {{ post.date | date_to_string }} by {{ post.author }}</p>
+    <hr>
+    <br>
+    <div class="post-mid nice-text">
+        {{ post.content }}
+    </div>
+    {% endif %}
+    {% endfor %}
 </div>
