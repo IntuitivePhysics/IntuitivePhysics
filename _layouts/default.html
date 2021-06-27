@@ -22,11 +22,23 @@
 
 
 <body>
-    <img src="/assets/images/wallpaper.webp" class='bgimage' alt="">
+    <picture>
+        <source srcset="
+            /assets/images/wallpaper.webp" type="image/webp">
+        <source srcset="
+            /assets/images/wallpaper.jpg" type="image/jpeg">
+        <img class="bgimage" src="/assets/images/wallpaper.jpg" alt="">
+    </picture>
     <div class="sidebar">
         <div class="nice-text condensed">
             <h4>Michael Huang</h4>
-            <img id="selfie" src="/assets/images/selfie.webp" alt="Image of Michael Huang">
+            <picture>
+                <source srcset="
+                    /assets/images/selfie.webp" type="image/webp">
+                <source srcset="
+                    /assets/images/selfie.jpg" type="image/jpeg">
+                <img id="selfie" src="/assets/images/selfie.jpg" alt="Image of Michael Huang">
+            </picture>
             <p>I am a physics student and enthusiast with an unquenchable
                 desire to learn and fully understand every physics concept!</p>
             <h4>Purpose of this blog</h4>
@@ -37,7 +49,13 @@
         <header>
             <div class="float-child">
                 <a href="/">
-                    <img id="logo" src="/assets/images/Intuitive-Physics.webp" alt="Intuitive Physics Logo">
+                    <picture>
+                        <source srcset="
+                            /assets/images/Intuitive-Physics.webp" type="image/webp">
+                        <source srcset="
+                            /assets/images/Intuitive-Physics.jpg" type="image/jpeg">
+                        <img id="logo" src="/assets/images/Intuitive-Physics.jpg" alt="Intuitive Physics Logo">
+                    </picture>
                 </a>
             </div>
             <div class="float-child">
