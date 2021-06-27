@@ -151,11 +151,16 @@ img{
     max-height: auto;
 }
 
-.logo{
+#selfie{
+    width: 263px;
+    height: 300px;
+}
+
+#logo{
     margin: 15px;
     margin-bottom: 0;
-    max-width: 100px;
-    max-height: 100px;
+    width: 100px;
+    height: 82px;
 }
 
 .post-box{
@@ -251,7 +256,7 @@ footer{
         box-shadow: 5px 5px 20px 0px rgb(0, 0, 0);
         width:25%;
         height: 100%;
-        overflow-y: hidden;
+        overflow-y: scroll;
     }
     .mainbody{
         width: 75%;
