@@ -1,6 +1,7 @@
 title : Intuitive Physics
 tagline : Understand physics deeply and intuitively!
 description : I share my insights into classical physics in this blog, from Faraday's Paradoxes to the definition of angular momentum.
+url : https://intuitivephysics.me
 plugins:
   - jekyll-feed
   - jekyll-sitemap
