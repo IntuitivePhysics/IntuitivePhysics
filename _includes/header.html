@@ -12,7 +12,7 @@
     </div>
     <div class="float-child">
         <nav>
-            <ul>
+            <ul class="inline">
                 {% for item in site.data.navigation %}
                 <li>
                     <a href="{{ item.link }}" {% if page.url==item.link %}class="selected" {% endif %}>
