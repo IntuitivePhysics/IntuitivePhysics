@@ -84,6 +84,7 @@ a{
     text-decoration: none;
     color:aliceblue;
     font-size: 1em;
+    transition: 0.2s;
 }
 
 a:hover{
@@ -96,13 +97,17 @@ a:hover{
 
 .main-left{
     border: 2px solid black;
-    box-shadow: 0px 0px 30px 0px rgb(0, 0, 0);
     padding:15px;
     float:left;
     position: inherit;
     background-color: rgba(19, 19, 19, 0.8);
     box-sizing: border-box;
     padding-bottom: 15%;
+}
+
+.box{
+    border: 1px solid black;
+    box-shadow: 0px 0px 20px 0px rgb(0, 0, 0);
 }
 
 .main-right{
@@ -121,6 +126,9 @@ a:hover{
     line-height: 1.5em;
 }
 
+.stretched{
+    line-height: 3em;
+}
 
 .flex-container {
     display: flex;
@@ -132,6 +140,10 @@ a:hover{
 
 .size-down{
     font-size: 1em;
+}
+
+.size-downer{
+    font-size: 0.8em;
 }
 
 .space-out{
@@ -203,7 +215,7 @@ footer{
     padding-bottom: 40px;
     border: 2px solid black;
     box-shadow: 0px 5px 20px 0px black;
-    background-color: rgba(19, 19, 19, 0.9);
+    background-color: rgba(19, 19, 19, 0.945);
     box-sizing: border-box;
 }
 
@@ -213,7 +225,6 @@ footer{
     margin-left: 10%;
     border: none;
     border: 2px solid black;
-    box-shadow: 0px 0px 20px 5px rgb(0, 0, 0);
     box-sizing: border-box;
     padding: 15px;
     margin-top: 10%;
@@ -246,16 +257,54 @@ footer{
     }
 }
 
+.leftbar{
+    display: none;
+}
+
 @media only screen and (min-width: 768px) {
     
     .sidebar{
         display: block;
         position: fixed;
-        background-color: rgba(32, 32, 32, 0.164);
+        background-color: rgba(17, 17, 17, 0.164);
         border-right: 2px solid black;
         box-shadow: 5px 5px 20px 0px rgb(0, 0, 0);
         width:25%;
         height: 100%;
+        overflow-y: scroll;
+
+    }
+    .block{
+        opacity: 0.1;
+        transition: 0.5s;
+        z-index: 10;
+    }
+    .block:hover{
+        opacity: 1;
+        z-index: 10;
+    }
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+        }
+        to {
+           opacity: 1;
+        }
+    }
+    .fixed{
+        position: fixed;
+        width: inherit;
+        height: fit-content;
+    }
+    .leftbar{
+        display: block;
+        background-color: rgba(32, 32, 32, 0.164);
+        border-right: 2px solid black;
+        box-shadow: 5px 5px 20px 0px rgb(0, 0, 0);
+        box-sizing: border-box;
+        width:10%;
+        height: 100%;
+        padding: 5px;
         overflow-y: scroll;
     }
     .mainbody{
@@ -282,9 +331,9 @@ footer{
         box-sizing: border-box;
     }
     .post-content{
-        width: 85%;
+        width: 70%;
         padding: 35px;
-        margin: 0;
+        margin:0;
         box-sizing: border-box;
     }
     .side-margin{
@@ -295,13 +344,14 @@ footer{
         float: left;
     }
     .related-post{
-        width: 15%;
+        width: 20%;
         border-left: 2px solid black;
         box-shadow: -5px 5px 10px 0px rgb(0, 0, 0);
         border: none;
         background: none;
         margin-left: 0;
+        padding-right: 15px;
         line-height: 1.2em;
+        box-sizing: border-box;
     }
-
 }

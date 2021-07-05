@@ -1,0 +1,28 @@
+---
+layout: default
+---
+<div class="sidebar">
+    <div class="block nice-text condensed">
+        <h4>Michael Huang</h4>
+        <picture>
+            <source srcset="
+                    /assets/images/selfie.webp" type="image/webp">
+            <source srcset="
+                    /assets/images/selfie.jpg" type="image/jpeg">
+            <img id="selfie" src="/assets/images/selfie.jpg" alt="Image of Michael Huang">
+        </picture>
+        <p>I am a physics student and enthusiast with an unquenchable
+            desire to learn and fully understand every physics concept!</p>
+        <h4>Purpose of this blog</h4>
+        <p>To share interesting yet often omitted insights into various topics in classical physics.</p>
+    </div>
+</div>
+<div class="mainbody">
+    {% include header.html %}
+    <main>
+        {{ content }}
+        <div class="main-right"></div>
+        <div class="clr"></div>
+    </main>
+    {% include footer.html %}
+</div>

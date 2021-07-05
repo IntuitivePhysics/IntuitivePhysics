@@ -1,13 +1,26 @@
 ---
 layout: default
 ---
-<div class="post">
+
+{% include header.html %}
+<main class="post">
+    <div class="float-child-desk leftbar">
+        <div class="fixed">
+            <h5>quick links</h5>
+            <br>
+            <ul class="size-downer">
+                <li><a href="otherblogs">Other Resources</a></li>
+            </ul>
+            <br>
+            {% include socialshare.html %}
+        </div>
+    </div>
     <div class="post-content float-child-desk nice-text">
         <h1>{{ page.title }}</h1>
         <p>Written {{ page.date | date_to_string }} by {{ page.author }}</p>
         <hr>
         <br>
-        <div class="post-mid">
+        <div class="post-mid stretched">
             {{ content }}
         </div>
     </div>
@@ -27,25 +40,27 @@ layout: default
     {% endif %}
     {% endfor %}
     {% if postCount>=1 %}
-    <div class="float-child-desk related-post nice-text">
+    <div class="float-child-desk box related-post nice-text">
         <h4>Related Posts</h4>
         <ul class="sep-list">
-        {% for post in site.posts %}
-        {% if post.url != page.url %}
-        {% assign sameTagCount = 0 %}
-        {% for tag in post.tags %}
-        {% if page.tags contains tag %}
-        {% assign sameTagCount = sameTagCount | plus: 1 %}
-        {% endif %}
-        {% endfor %}
-        {% if sameTagCount>=1 %}
-        <li class="size-down"><p class="size-down"><a href="{{ post.url }}" class="size-down">{{ post.title }}</a></p></li>
-        {% endif %}
-        {% endif %}
-        {% endfor %}
+            {% for post in site.posts %}
+            {% if post.url != page.url %}
+            {% assign sameTagCount = 0 %}
+            {% for tag in post.tags %}
+            {% if page.tags contains tag %}
+            {% assign sameTagCount = sameTagCount | plus: 1 %}
+            {% endif %}
+            {% endfor %}
+            {% if sameTagCount>=1 %}
+            <li class="size-down">
+                <p class="size-down"><a href="{{ post.url }}" class="size-down">{{ post.title }}</a></p>
+            </li>
+            {% endif %}
+            {% endif %}
+            {% endfor %}
         </ul>
     </div>
     {% endif %}
     <div class="clr"></div>
-
-</div>
+</main>
+{% include footer.html %}
