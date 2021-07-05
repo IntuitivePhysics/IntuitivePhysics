@@ -73,6 +73,8 @@ body {
 }
 
 body .bgimage {
+    min-width: 100%;
+    min-height: 100%;
     position: fixed;
     z-index: -10;
 }
@@ -257,7 +259,7 @@ footer{
         padding-left: 15px;
     }
     img{
-        background: rgb(202, 202, 202);
+        width: 100%;
     }
 }
 

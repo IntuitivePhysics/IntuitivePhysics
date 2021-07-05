@@ -1,3 +1,6 @@
+---
+layout: compress
+---
 <!DOCTYPE html>
 <html lang="en">
 
@@ -6,13 +9,9 @@
     <title>{{ page.title }}</title>
     {% seo title=false %}
     {% feed_meta %}
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <link rel="stylesheet" href="/assets/katex/katex.min.css">
     <link rel="stylesheet" href="/assets/css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" type="image/webp" href="/assets/images/Intuitive-Physics.webp">
-    <link href="../assets/css/font-awesome.min.css" rel="stylesheet">
-    <link href="../assets/css/button.css" rel="stylesheet">
     {% include analytics.html %}
 </head>
 
@@ -26,7 +25,8 @@
         <img class="bgimage" src="/assets/images/wallpaper.jpg" alt="">
     </picture>
     {{ content }}
-
+    <link href="../assets/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/katex/katex.min.css">
     <script defer src="/assets/katex/katex.min.js"></script>
     <script defer src="/assets/katex/auto-render.min.js" onload="renderMathInElement(document.body);"></script>
 </body>
