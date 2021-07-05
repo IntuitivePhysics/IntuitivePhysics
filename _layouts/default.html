@@ -9,8 +9,14 @@ layout: compress
     <title>{{ page.title }}</title>
     {% seo title=false %}
     {% feed_meta %}
-    <link rel="stylesheet" href="/assets/css/style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="preload" href="/assets/fonts/fontawesome-webfont.woff" as="font" type="font/woff" crossorigin>
+    <link rel="preload" href="/assets/fonts/fontawesome-webfont.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="/assets/fonts/fontawesome-webfont.ttf" as="font" type="font/ttf" crossorigin> 
+    <link rel="preload" href="/assets/fonts/fontawesome-webfont.svg" as="font" type="font/svg" crossorigin> 
+    <link href="../assets/css/font-awesome.min.css" rel="stylesheet">
+
     <link rel="shortcut icon" type="image/webp" href="/assets/images/Intuitive-Physics.webp">
     {% include analytics.html %}
 </head>
@@ -25,7 +31,6 @@ layout: compress
         <img class="bgimage" src="/assets/images/wallpaper.jpg" alt="">
     </picture>
     {{ content }}
-    <link href="../assets/css/font-awesome.min.css" rel="stylesheet">
     <link rel="stylesheet" href="/assets/katex/katex.min.css">
     <script defer src="/assets/katex/katex.min.js"></script>
     <script defer src="/assets/katex/auto-render.min.js" onload="renderMathInElement(document.body);"></script>
