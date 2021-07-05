@@ -4,48 +4,70 @@
     clear:both;
 }
 
-*{
-    padding:0;
-    margin:0;
-    color:rgb(204, 200, 191);
-}
+
 
 p{
+    margin: 0;
+    padding: 0;
     font-size: 1.2em;
     font-family: Arial, Helvetica, sans-serif;
+    color:rgb(204, 200, 191);
 }
 li{
+    margin: 0;
+    padding: 0;
     font-size: 1.2em;
     font-family: Arial, Helvetica, sans-serif;
+    color:rgb(204, 200, 191);
 }
 h1{
+    margin: 0;
+    padding: 0;
     font-size: 2em;
     margin-top: 1.5em;
     font-family: Arial, Helvetica, sans-serif;
+    color:rgb(204, 200, 191);
 }
 h2{
+    margin: 0;
+    padding: 0;
     font-size: 1.8em;
     margin-top: 1.5em;
     font-family: Arial, Helvetica, sans-serif;
+    color:rgb(204, 200, 191);
 }
 h3{
+    margin: 0;
+    padding: 0;
     font-size: 1.6em;
     margin-top: 1.5em;
     font-family: Arial, Helvetica, sans-serif;
+    color:rgb(204, 200, 191);
 }
 h4{
+    margin: 0;
+    padding: 0;
     font-size: 1.4em;
     margin-top: 1.5em;
     font-family: Arial, Helvetica, sans-serif;
+    color:rgb(204, 200, 191);
 }
 h5{
+    margin: 0;
+    padding: 0;
     font-size: 1.3em;
     margin-top: 1.5em;
     font-family: Arial, Helvetica, sans-serif;
+    color:rgb(204, 200, 191);
 }
 
 .no-top{
     margin-top: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
 }
 
 body .bgimage {
@@ -72,6 +94,8 @@ header nav{
 }
 
 ul{
+    margin: 0;
+    padding: 0;
     list-style: none;
 }
 
@@ -81,6 +105,8 @@ nav li{
 }
 
 a{
+    margin: 0;
+    padding: 0;
     text-decoration: none;
     color:aliceblue;
     font-size: 1em;
@@ -189,17 +215,6 @@ img{
     background-color: rgb(43, 43, 43);
 }
 
-.padder{
-    padding-left:10%;
-    padding-right:10%;
-    padding-top:25px;
-    padding-bottom:25px;
-}
-
-.padder li{
-    margin-bottom:15px;
-}
-
 main{
     position: relative;
 }
@@ -282,14 +297,6 @@ footer{
     .block:hover{
         opacity: 1;
         z-index: 10;
-    }
-    @keyframes fadeIn {
-        from {
-            opacity: 0;
-        }
-        to {
-           opacity: 1;
-        }
     }
     .fixed{
         position: fixed;
