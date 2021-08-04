@@ -94,7 +94,7 @@ Principle of Relativity governs that laws of electromagnetism should be invarian
 
 #### Thought Experiment Setup
 
-![setup](../assets/images/setup.jpg)
+![setup](../assets/images/setup.svg)
 
 We have 2 frames of references $S_1,S_2$. A positive charge $q$ moves $A\rightarrow B$ at velocity $v$. In the wire, the positive charges moves to the right with velocity $v$ while the negative charges are fixed. Reference frame $S_2$ also traverses right at velocity $v$. We denote the separation between each positive charge with $\Delta x^+$ and that of negative charges as $\Delta x^-$. Let $\rho^+,\rho^-$ denote the charge density of positive and negative charges. Then, $\rho=\frac{e}{\Delta x}$. $A,B,q$ are all $r$ away from the wire.
 
@@ -126,7 +126,7 @@ As we will see, for the math to workout correctly, we also need to abandon the [
 
 ### Mathematical Derivation of Length Contraction and Time Dilation
 
-![setup](../assets/images/setup.jpg)
+![setup](../assets/images/setup.svg)
 
 Therefore, the act of boosting from $S_1$ to $S_2$ changes the state of motion of positive charges from velocity $v$ to stationary, and changes the state of motion of negative charges from stationary to moving with velocity $v$. If this change of motion decrease $\Delta x^-$ to a factor of $\lambda$, it should symmetrically increase $\Delta x^+$ by a factor of $\frac{1}{\lambda}$. 
 
@@ -222,7 +222,6 @@ Given these two rather fundamental effects, we may further derive the full Loren
 
 If we make speed of light the standard unit for speed (so $c=1$), full Lorentz Transformations are: 
 
-
 $$
 x'=\frac{x+vt}{\sqrt{1-v^2}}
 $$
@@ -231,6 +230,4 @@ $$
 t'=\frac{t+vx}{\sqrt{1-v^2}}
 $$
 
-
 We can see the hidden $\lambda=\sqrt{1-v^2}$ term clearly. 
-
