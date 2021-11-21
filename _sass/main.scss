@@ -189,7 +189,11 @@ a:hover{
     margin: 10px;
 }
 
-.sidebar{
+#sidebar{
+    display: none;
+}
+
+#float-text{
     display: none;
 }
 
@@ -276,26 +280,49 @@ footer{
 }
 
 @media only screen and (min-width: 768px) {
-    
-    .sidebar{
+    #sidebar{
+        display: block;
+        opacity: 0;
+        position: fixed;
+        transition: 0.5s;
+        background-color: rgba(17, 17, 17, 0.164);
+        border-right: 2px solid black;
+        box-shadow: 5px 5px 20px 0px rgb(0, 0, 0);
+        width:5%;
+        height: 100%;
+    }
+    #float-text:hover ~ #sidebar{
         display: block;
         position: fixed;
+        opacity: 1;
         background-color: rgba(17, 17, 17, 0.164);
         border-right: 2px solid black;
         box-shadow: 5px 5px 20px 0px rgb(0, 0, 0);
         width:25%;
         height: 100%;
-        overflow-y: scroll;
-
     }
-    .block{
-        opacity: 0.1;
+    #float-text:hover ~ #mainbody{ 
+        width: 75%;
+        margin-left: 25%;
+    }
+    #mainbody{
         transition: 0.5s;
-        z-index: 10;
+        width: 95%;
+        margin-left: 5%;
     }
-    .block:hover{
-        opacity: 1;
+    #float-text{
+        display: block;
+        position: fixed;
         z-index: 10;
+        opacity: 1;
+        transition: 0.2s;
+    }
+    #float-text:hover{
+        opacity: 0;
+    }
+    #float-a{
+        padding: 60%;
+        font-size: 2em;
     }
     .fixed{
         position: fixed;
@@ -312,10 +339,6 @@ footer{
         height: 100%;
         padding: 5px;
         overflow-y: scroll;
-    }
-    .mainbody{
-        width: 75%;
-        margin-left: 25%;
     }
     .main-left{
         width: 80%;
