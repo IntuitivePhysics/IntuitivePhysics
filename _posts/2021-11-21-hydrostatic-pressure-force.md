@@ -32,7 +32,7 @@ If we would like to find the pressure force exerted on the top part of the plane
 
 
 $$
-\vec{F} = \iint_A \vec{dF} = \iint_A p\vec{dA} = \iint_A \rho g \Delta h dA = \rho g \iint_A \Delta h dA
+\vec{F} = \iint_A \vec{dF} = \iint_A p\vec{dA} \\= \iint_A \rho g \Delta h dA = \rho g \iint_A \Delta h dA
 $$
 
 

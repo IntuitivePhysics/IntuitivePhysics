@@ -107,7 +107,7 @@ Since $F_1 \propto r_1^{k-n-1}$, and similarly for $F_2$, we may derive
 $$
 F_\text{net} \propto r_1^{k-n-1} - r_2^{k-n-1} \\
 \approx (r-d\cos(\theta))^{k-n-1} - (r+d\cos(\theta))^{k-n-1} \\
-\approx r^{k-n-1} -(k-n-1)r^{k-n-2}d\cos(\theta) - r^{k-n-1}-(k-n-1)r^{k-n-2}d\cos(\theta) \\
+\approx r^{k-n-1} -(k-n-1)r^{k-n-2}d\cos(\theta)\\ - r^{k-n-1}-(k-n-1)r^{k-n-2}d\cos(\theta) \\
 = 2(n+1-k)d\cos(\theta) r^{k-n-2}
 $$
 
