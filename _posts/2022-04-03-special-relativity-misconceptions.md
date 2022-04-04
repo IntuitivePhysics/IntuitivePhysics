@@ -113,7 +113,7 @@ $$
  If one interprets $S$ as the standard reference frame. The statement means:
 
 $$
-\text{rate at which A travels through time}^2 + \text{rate at which A travels through space}^2 = 1
+\text{rate at which A travels through time}^2 \\+ \text{rate at which A travels through space}^2 \\= 1
 $$
 
 The first is measured by how fast $A$'s clock ticks compare to $S$'s; the second is measured by $A$'s $v$ w.r.t. $S$. 
