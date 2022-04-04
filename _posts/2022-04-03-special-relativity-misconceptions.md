@@ -24,10 +24,10 @@ Special Relativity's spacetime concerns with several major effects: 1. time dila
 
 ### Content
 
-1. Basics
-2. Time Dilation
-3. Distance Dilation / Length Contraction
-4. How to conceptualize spacetime
+1. [Basics](#basics)
+2. [Time Dilation](#time-dilation)
+3. [Distance Dilation / Length Contraction](#length-contraction)
+4. How to conceptualize [spacetime](#how-to-conceptualize-spacetime)
 
 ### Basics
 
@@ -39,7 +39,7 @@ With that out of the way, let's jump into some misconceptions.
 
 **Time Dilation means we measure time-wise separation of events occuring on moving objects to be longer by $\gamma$**
 
-**WRONG! **
+**WRONG!**
 
 First events cannot be "moving". 
 
@@ -65,7 +65,7 @@ Just consider two events $A,B$. Given two observers $S, S'$. If $S'$ measures $A
 
 **WRONG!!**
 
-$\text{Length} \not = \text{Spatial Separation}$
+$$\text{Length} \not = \text{Spatial Separation}$$
 
 In fact, if you compare the $\Delta x$ measured by stationary observer to that measured by an observer moving in a certain direction, you may find the $\Delta x$ measured by the moving observer to be shorter than that measured by the stationary observer (sometimes even $0$ when the moving observer moves from $A$ towards $B$).
 
@@ -84,10 +84,12 @@ So, $\Delta x$ actually dilates and doesn't contract. We may call that **distanc
 This is the common, easy, but confusing approach. **Time dilation**, **length contraction**, and **simultaneity difference** are three separate but interrelated concepts. Time dilation deals with the correlation between $v, t$. Length contraction deals with the correlation between $v,x$. Simultaneity deals with the correlation between $x,t$.
 
 They are clearly encoded in Lorentz Transformations:
+
 $$
 \frac{x'}{\gamma}=x+vt \\
 \frac{t'}{\gamma}=t+vx
 $$
+
 Consider $x,t$ as measured from $S$, which is moving with respect to $S'$ at velocity $v$. Let's call $S'$ our stationary frame. Then, $\frac{t'}{\gamma}$ means that the stationary frame's measured time separation is $\gamma$ larger than that measured in the moving frame $S$. Similarly, $\frac{x'}{\gamma}$ indicates that distance separation is $\gamma$ larger in the stationary frame $S'$. The simultaneity difference is accounted for by $vx$. 
 
 **Approach 2: How I sometimes like to think about it**
@@ -103,13 +105,17 @@ We developed our idea of a reference frame under this unfair treatment of the ti
 **So what do we do?**
 
 Abandon the concept of motion. Don't think about $A$ undergoing a motion as in there is a change of $x$ as $t$ changes. Think of $A$ as    moving through the grid of spacetime, tracing out a worldline. If we let $S$ be our reference frame, $t_S$ be time in our reference frame and use that as the standard for measuring the time passage of other observers. Then, we can speak of the rate at which $A$ moves through time $\frac{d\tau_A}{dt_S}$ ($\tau_A$ is $A$'s proper time) and the rate at which it moves through space $\frac{dx_A}{dt_S}$ ($x_A$ is $A$'s position with respect to $S$). Then, the statement of time-dilation and distance-dilation is captured in the statement:
+
 $$
 \left(\frac{d\tau_A}{dt_S}\right)^2 + \left(\frac{dx_A}{dt_S}\right)^2 = \left(\frac{dt_S}{dt_S}\right)^2 = 1
 $$
+
  If one interprets $S$ as the standard reference frame. The statement means:
+
 $$
 \text{rate at which A travels through time}^2 + \text{rate at which A travels through space}^2 = 1
 $$
+
 The first is measured by how fast $A$'s clock ticks compare to $S$'s; the second is measured by $A$'s $v$ w.r.t. $S$. 
 
 Clearly, when $v$ is high, $\frac{d\tau_A}{dt_S}$ is low, meaning it travels through time slower (slower clock tick rate). 
@@ -117,10 +123,12 @@ Clearly, when $v$ is high, $\frac{d\tau_A}{dt_S}$ is low, meaning it travels thr
 We don't even need to consider the distance-dilation. Because $x,t$ are two completely symmetric axis like $x,y$, distance-dilation is just the symmetric effect of time-dilation. 
 
 The complete symmetry in Lorentz Transformation also makes sense now:
+
 $$
 \frac{x'}{\gamma}=x+vt \\
 \frac{t'}{\gamma}=t+vx
 $$
+
 The $vx$ simultaneity difference term is not as dark magic, because it's just the symmetric effect of $vt$ (there's a bit complication here that is hidden because I set $c=1$). 
 
 **Final note about spacetime coordinate**
