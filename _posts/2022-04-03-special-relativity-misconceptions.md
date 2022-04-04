@@ -107,7 +107,7 @@ We developed our idea of a reference frame under this unfair treatment of the ti
 Abandon the concept of motion. Don't think about $A$ undergoing a motion as in there is a change of $x$ as $t$ changes. Think of $A$ as    moving through the grid of spacetime, tracing out a worldline. If we let $S$ be our reference frame, $t_S$ be time in our reference frame and use that as the standard for measuring the time passage of other observers. Then, we can speak of the rate at which $A$ moves through time $\frac{d\tau_A}{dt_S}$ ($\tau_A$ is $A$'s proper time) and the rate at which it moves through space $\frac{dx_A}{dt_S}$ ($x_A$ is $A$'s position with respect to $S$). Then, the statement of time-dilation and distance-dilation is captured in the statement:
 
 $$
-\left(\frac{d\tau_A}{dt_S}\right)^2 + \left(\frac{dx_A}{dt_S}\right)^2 = \left(\frac{dt_S}{dt_S}\right)^2 = 1
+\left(\frac{d\tau_A}{dt_S}\right)^2 + \left(\frac{dx_A}{dt_S}\right)^2 \\= \left(\frac{dt_S}{dt_S}\right)^2 = 1
 $$
 
  If one interprets $S$ as the standard reference frame. The statement means:
