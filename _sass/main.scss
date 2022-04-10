@@ -5,7 +5,7 @@
 }
 
 .katex{
-    color:rgb(204, 200, 191);
+    color:#000000;
 }
 
 p{
@@ -13,14 +13,14 @@ p{
     padding: 0;
     font-size: 1.2em;
     font-family: Arial, Helvetica, sans-serif;
-    color:rgb(204, 200, 191);
+    color:#000000;
 }
 li{
     margin: 0;
     padding: 0;
     font-size: 1.2em;
     font-family: Arial, Helvetica, sans-serif;
-    color:rgb(204, 200, 191);
+    color:#000000;
 }
 h1{
     margin: 0;
@@ -28,7 +28,7 @@ h1{
     font-size: 2em;
     margin-top: 1.5em;
     font-family: Arial, Helvetica, sans-serif;
-    color:rgb(204, 200, 191);
+    color:#000000;
 }
 h2{
     margin: 0;
@@ -36,7 +36,7 @@ h2{
     font-size: 1.8em;
     margin-top: 1.5em;
     font-family: Arial, Helvetica, sans-serif;
-    color:rgb(204, 200, 191);
+    color:#000000;
 }
 h3{
     margin: 0;
@@ -44,7 +44,7 @@ h3{
     font-size: 1.6em;
     margin-top: 1.5em;
     font-family: Arial, Helvetica, sans-serif;
-    color:rgb(204, 200, 191);
+    color:#000000;
 }
 h4{
     margin: 0;
@@ -52,7 +52,7 @@ h4{
     font-size: 1.4em;
     margin-top: 1.5em;
     font-family: Arial, Helvetica, sans-serif;
-    color:rgb(204, 200, 191);
+    color:#000000;
 }
 h5{
     margin: 0;
@@ -60,7 +60,7 @@ h5{
     font-size: 1.3em;
     margin-top: 1.5em;
     font-family: Arial, Helvetica, sans-serif;
-    color:rgb(204, 200, 191);
+    color:#000000;
 }
 
 .no-top{
@@ -85,18 +85,26 @@ body .bgimage {
 }
 
 header{
-    background-color: rgba(46, 46, 48, 1);
-    box-shadow: 0px 5px 25px 0px rgba(0, 0, 0, 0.5);
+    padding: 15px;
+    background-color: rgba(0, 0, 0, 1);
+    box-shadow: 0px 10px 20px 0px rgb(0, 0, 0);
+    a{
+	color:rgb(217, 225,232);
+    }
+    a:hover{
+	color:rgb(187, 195,202);
+    }
 }
+
 
 .float-child{
     float: left;
 }
 
 header nav{
-    margin-top: 20px;
-    margin-left: 20px;
-    margin-bottom: 15px;
+    margin-top: 9px;
+    margin-left: 5px;
+    margin-bottom: 5px;
 }
 
 ul{
@@ -117,14 +125,15 @@ a{
     margin: 0;
     padding: 0;
     text-decoration: none;
-    color:aliceblue;
+    color:#000066;
     font-size: 1em;
     transition: 0.2s;
 }
 
 a:hover{
-    color:rgb(187, 195, 202);
+    color: #666688;
 }
+
 
 .selected{
     font-weight: bolder;
@@ -133,9 +142,8 @@ a:hover{
 .main-left{
     border: 2px solid black;
     padding:15px;
-    float:left;
     position: inherit;
-    background-color: rgba(19, 19, 19, 0.8);
+    background-color: rgba(255, 255, 255, 0.8);
     box-sizing: border-box;
     padding-bottom: 15%;
 }
@@ -206,24 +214,21 @@ a:hover{
 }
 
 #logo{
-    margin: 15px;
-    margin-bottom: 0;
-    width: 100px;
-    height: 82px;
+    height: 35px;
 }
 
 .post-box{
-    box-shadow: 5px 5px 30px 0px rgb(0, 0, 0);
+    box-shadow: 5px 5px 30px 0px rgb(150, 150, 150);
     border-radius: 5px;
-    background-color: rgb(37, 37, 37);
+    background-color: rgb(220, 220, 220);
     padding: 25px;
     flex-basis: content;
     box-sizing: border-box;
 }
 
 .post-container .post-box:hover{
-    box-shadow: 5px 5px 10px 0px rgb(0, 0, 0);
-    background-color: rgb(43, 43, 43);
+    box-shadow: 5px 5px 10px 0px rgb(150, 150, 150);
+    background-color: rgb(230, 230, 230);
 }
 
 main{
@@ -233,19 +238,50 @@ main{
 footer{
     padding:15px;
     box-shadow: 0px -10px 20px 0px rgb(0, 0, 0);
-    background-color: rgba(46, 46, 46, 0.842);
+    background-color: rgba(0, 0, 0, 1);
 }
 
+footer{
+    a{
+	color: rgb(255,255,190);
+    }
+    a:hover{
+	color: rgb(200,200,180);
+    }
+    p{
+	color: rgb(217, 225,232);
+    }
+    li{
+	color: rgb(217, 225,232);
+    }
+    h1{
+	color: rgb(217, 225,232);
+    }
+    h2{
+	color: rgb(217, 225,232);
+    }
+    h3{
+	color: rgb(217, 225,232);
+    }
+    h4{
+	color: rgb(217, 225,232);
+    }
+    h5{
+	color: rgb(217, 225,232);
+    }
+}
+
+
 .post{
-    background-color: rgba(19,19,19,0.7);
+//    background-color: rgba(19,19,,0.7);
 }
 
 .post-content{
     padding-top:40px;
     padding-bottom: 40px;
-    border: 2px solid black;
-    box-shadow: 0px 5px 20px 0px black;
-    background-color: rgba(19, 19, 19, 0.945);
+    margin-top: 30px;
+    margin-bottom: 100px;
+    background-color: rgba(255, 255, 255, 0.945);
     box-sizing: border-box;
 }
 
@@ -258,7 +294,6 @@ footer{
     width: 80%;
     margin-left: 10%;
     border: none;
-    border: 2px solid black;
     box-sizing: border-box;
     padding: 15px;
     margin-top: 10%;
@@ -298,6 +333,7 @@ footer{
 
 #mainbody{ 
     width: 100%;
+    box-shadow: -2px 0px 20px 0px rgb(0, 0, 0);
 }
 
 @media only screen and (min-width: 768px) {
@@ -352,9 +388,6 @@ footer{
     }
     .leftbar{
         display: block;
-        background-color: rgba(32, 32, 32, 0.164);
-        border-right: 2px solid black;
-        box-shadow: 5px 5px 20px 0px rgb(0, 0, 0);
         box-sizing: border-box;
         width:10%;
         height: 100%;
@@ -362,28 +395,23 @@ footer{
         overflow-y: scroll;
     }
     .main-left{
-        width: 80%;
+        width: 100%;
         padding: 35px;
+	padding-right: 20%;
         box-sizing: border-box;
         margin-left: 0;
         margin-right: 0;
         border: none;
         box-shadow: none;
     }
-    .main-right{
-        display: inline;
-        position: absolute;
-        height: 100%;
-        width: 20%;
-        float:left;
-        border-left:2px solid black;
-        box-shadow: -20px 0px 20px -10px rgb(0, 0, 0);
-        box-sizing: border-box;
-    }
+
     .post-content{
         width: 70%;
-        padding: 35px;
+        padding-left: 100px;
+	padding-right: 100px;
         margin:0;
+	margin-bottom: 100px;
+	margin-top: 30px;
         box-sizing: border-box;
     }
     .side-margin{
@@ -395,8 +423,6 @@ footer{
     }
     .related-post{
         width: 20%;
-        border-left: 2px solid black;
-        box-shadow: -5px 5px 10px 0px rgb(0, 0, 0);
         border: none;
         background: none;
         margin-left: 0;
