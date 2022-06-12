@@ -145,28 +145,29 @@ But can we still formulate a definition of voltage whereby we can just say the v
 I just added two imaginary arrows to our previous setup. If we follow along the arrow and take $\int \bold{E}\cdot \bold{dl}$, we get the voltage drop across the arrow path is $L\frac{dI}{dt}$. Remember that in the presence of a changing magnetic force, the electric field is non-conservative and thus the voltage drop is dependent on the path we take. We know this for sure because we can apply Maxwell-Faraday's Law to the closed loop formed by the imaginary arrows and $L$. In fact, across almost any path we take except the ones that go into the coils of $L$, we will measure a voltage drop of $L\frac{dI}{dt}$, because the magnetic field lines in $L$ is fairly contained. This simplification is called the lump model explained by Sadadhgar in his second video and by Prof. Feynman in chapter 22 of his lecture notes. Therefore, it seems almost ridiculous that we cannot just claim the voltage drop across $L$ is $L\frac{dI}{dt}$ while almost any path we take across those two points give us a voltage drop of $L\frac{dI}{dt}$. 
 
 
-One thing we can do is as follows: separate the consideration of $ \bold{E}_\text{charge} \text{ and } \bold{E}_\text{induced} $. That is, the total $\bold{E} = \bold{E}_\text{charge} +\bold{E}_\text{induced}$, where $\bold{E}_\text{charge}$ is the electric field created by the charge distribution. $\bold{E}_\text{induced}$ is the electric field induced by the inductor or the changing magnetic field. Note that $\bold{E}_\text{charge}$ is still conservative. If we define voltage change as $\Delta V = \int \bold{E}_\text{charge}\cdot \bold{dl}$, we solve a lot of our snags. 
+
+One thing we can do is as follows: separate the consideration of $\bold{E}_ \text{charge}$ and  $\bold{E}_ \text{induced}$. That is, the total $\bold{E} = \bold{E}_ \text{charge} +\bold{E}_ \text{induced}$, where $\bold{E}_ \text{charge}$ is the electric field created by the charge distribution. $\bold{E}_ \text{induced}$ is the electric field induced by the inductor or the changing magnetic field. Note that $\bold{E}_ \text{charge}$ is still conservative. If we define voltage change as $\Delta V = \int \bold{E}_ \text{charge}\cdot \bold{dl}$, we solve a lot of our snags. 
 
 
 First, 
 
 $$
-\oint \bold{E}_\text{charge}\cdot \bold{dl} = 0
+\oint \bold{E}_ \text{charge}\cdot \bold{dl} = 0
 $$
 
 Our KVL holds, always. 
 
 
-Further, remember that the charge distribution must form in such a way such that the clockwise $\bold{E}_\text{charge}$ balances out the counterclockwise $\bold{E}_\text{induced}$? Well, the EMF $\mathcal{E}$ induced is $-L\frac{dI}{dt}$ across $L$ that means the voltage drop due to the $\bold{E}_\text{charge}$ must also have a magnitude of $L\frac{dI}{dt}$ but in the clockwise direction. 
+Further, remember that the charge distribution must form in such a way such that the clockwise $\bold{E}_ \text{charge}$ balances out the counterclockwise $\bold{E}_ \text{induced}$? Well, the EMF $\mathcal{E}$ induced is $-L\frac{dI}{dt}$ across $L$ that means the voltage drop due to the $\bold{E}_ \text{charge}$ must also have a magnitude of $L\frac{dI}{dt}$ but in the clockwise direction. 
 
 
-Now we have it! If we consider the voltage change to be defined by $\int \bold{E}_\text{charge}\cdot \bold{dl}$, then we can safely say the voltage drop across $L$ is $L\frac{dI}{dt}$. 
+Now we have it! If we consider the voltage change to be defined by $\int \bold{E}_ \text{charge}\cdot \bold{dl}$, then we can safely say the voltage drop across $L$ is $L\frac{dI}{dt}$. 
 
 
 In a practical sense, this is very useful, since you don't have to consider carefully with Maxwell-Faraday's Law why the voltage drop along one path is different from the voltage drop across another. 
 
 
-In theory, there's no ways to distinguish whether a particular $\bold{E}$ field is $\bold{E}_\text{charge}$ or $\bold{E}_\text{induced}$, so our definition of voltage change is theoretically unsatisfying. 
+In theory, there's no ways to distinguish whether a particular $\bold{E}$ field is $\bold{E}_ \text{charge}$ or $\bold{E}_ \text{induced}$, so our definition of voltage change is theoretically unsatisfying. 
 
 
-Conclusion 2: **if we define $\Delta V = \int \bold{E}_\text{charge}\cdot \bold{dl}$, we can keep our KVL and other assumptions, but this definition is theoretically unsettling.**
+Conclusion 2: **if we define $\Delta V = \int \bold{E}_ \text{charge}\cdot \bold{dl}$, we can keep our KVL and other assumptions, but this definition is theoretically unsettling.**
