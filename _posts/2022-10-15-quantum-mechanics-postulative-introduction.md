@@ -33,6 +33,7 @@ This is essentially a brief postulative reformulation of the theoretical content
 
 Vectors are usually represented by a finite dimensional tuple $ (a_1, a_2, a_3) $. It is more general to represent a vector with an integer valued function $f$ such that $f(1)=a_1$, $f(2)=a_2$, $f(3)=a_3$. In other words, the function $f$ takes as input an index and output the value corresponding to that index for the vector. 
 
+
 Thus, vectors can be generalized to infinite dimensions $ (a_1,a_2,a_3,\cdots) $ by extending the domain of $f$ to all natural numbers $ \mathbb{N}$. We can further generalize infinite dimensional vectors by making the number of dimensions uncountable--we can allow an index to the vector to be any real number (or even complex number). Thus, any function $f$ could be perceived as a representation of a vector whereby the value corresponding to the $x^\text{th}$ index is $f(x) $. We will henceforth use $ |f\rangle$ to denote a vector that is represented by the function $f$. 
 
 **Inner product**
