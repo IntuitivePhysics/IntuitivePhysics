@@ -39,11 +39,9 @@ Notice that in orthonormal coordinate, $x_i=x^i$: the dot product between a vect
 Based on the definition of contravariant and covariant coordinates, we can relate the two coordinate components,
 
 $$
-\begin{align*}
 x_i = \vec{x}\cdot \vec{e}_i 
 	= (x^j \vec{e}_j) \cdot \vec{e}_i 
 	= x^j (\vec{e}_j \cdot \vec{e}_i) 
-\end{align*}
 $$
 	
 **Definition.** We define $g_{ij} = \vec{e}_i \cdot \vec{e}_j$ to be the metric tensor of our coordinate system. 
@@ -51,9 +49,7 @@ $$
 Based on its definition, we can substitute $g_{ij}$ into our equation to get,
 
 $$
-\begin{align*}
 	x_i = g_{ji} x^j
-\end{align*}
 $$
 
 This is called the **index lowering** operation.
@@ -61,12 +57,10 @@ This is called the **index lowering** operation.
 If we have the covariant coordinates, how can we find the contravariant coordinates? We can do that by taking the matrix inverse of $g_{ji}$ on both sides of the equation, begetting,
 
 $$
-\begin{align*}
 	g^{ki} x_i &= g^{ki}g_{ji} x^j &\text{$g^{ki}$ as an operator collapsing its 2nd index}\\
 	g^{ki} x_i &= g^{ki}g_{ij} x^j &\text{symmetry of $g$ is used}\\
 	g^{ki} x_i &= \delta^k_j x^j \\
 	g^{ki} x_i &= x^k 
-\end{align*}
 $$
 
 This could be called a **index raising** operation, I suppose.
@@ -76,9 +70,7 @@ This could be called a **index raising** operation, I suppose.
 When we change the coordinate system (i.e. $\{\vec{e}_i\}$), how do the contravariant components of a vector transform? The answer is intuitively straightforward---because the coordinate system is locally a non-orthonormal cartesian coordinate, we just need to follow the chain rule.
 
 $$
-\begin{align*}
 	{x'}^i = \frac{\partial {x'}^i}{\partial x^j} x^j
-\end{align*}
 $$
 
 ##### How do covariant components transform?
@@ -88,17 +80,13 @@ Remember that the covariant component $x_i$ is just $\vec{x}\cdot \vec{e}_i$. $\
 Let's say we want to express $\vec{e}'_i$ in terms of the unprimed basis. $\frac{\partial x^j}{\partial {x'}^i}$ is intuitively the component of $\vec{e}'_i$ in the direction of $\vec{e}_j$. Thus,
 
 $$
-\begin{align*}
 	\vec{e}'_i = \frac{\partial x^j}{\partial {x'}^i} \vec{e}_j
-\end{align*}
 $$
 
 Now we understand how coordinate basis transform, it's easy to find how the covariant vector transforms. 
 
 $$
-\begin{align*}
 	x'_i = \vec{x}\cdot \vec{e}'_i = \vec{x}\cdot \left(\frac{\partial x^j}{\partial {x'}^i} \vec{e}_j \right) = \frac{\partial x^j}{\partial {x'}^i} \vec{x}\cdot \vec{e}_j = \frac{\partial x^j}{\partial {x'}^i} x_j
-\end{align*}
 $$
 
 As predicted, because the covariant vector component $x_i \propto \vec{e}_i$, $x_i$ varies in the same manner as the coordinate basis vector. 
@@ -122,23 +110,19 @@ In terms of these dual basis, the definition of covariant and contravariant coor
 The contravariant coordinates becomes like the covariant coordinates:
 
 $$
-\begin{align*}
 	x^i \vec{e}_i &= \vec{x} \\
 	x^i \vec{e}_i \cdot \vec{e}^i &= \vec{x}\cdot \vec{e}^i \\
 	x^i &= \vec{x} \cdot \vec{e}^i
-\end{align*}
 $$
 
 We can also show the covariant coordinates becomes like the contravariant coordinates:
 Let $\vec{x} = y_j \vec{e}^j$. We then prove $x_i = y_i$.
 
 $$
-\begin{align*}
 	\vec{x} &= y_j \vec{e}^j \\
 	\vec{x}\cdot \vec{e}_i &= y_j \vec{e}^j \cdot \vec{e}_i \\
 	x_i &= y_j \delta^j_i \\
 	x_i &= y_i 
-\end{align*}
 $$
 
 Now, we are able to define both contravariant coordinates and covariant coordinates more clearly. 
@@ -190,17 +174,13 @@ Thus, the natural way to extend the definition of rank-1 tensor to higher ranks 
 **Definition.** Given a rank-n tensor $X$, its component,
 
 $$
-\begin{align*}
 X_{q_1q_2\cdots q_n} = T(\vec{e}_{q_1}, \vec{e}_{q_2}, \cdots, \vec{e}_{q_n})
-\end{align*}
 $$
 
 where $T$ is a multilinear map with respect to
 
 $$
-\begin{align*}
 \vec{e}_{q_1}, \vec{e}_{q_2}, \cdots, \vec{e}_{q_n}
-\end{align*}
 $$
 
 ($T$ can depend on $\vec{x}$, which is just treated as a constant). 
@@ -210,17 +190,13 @@ The contravariant coordinates are similarly defined.
 **Definition.** Given a rank-n tensor $X$, its component,
 
 $$
-\begin{align*}
 X^{p_1p_2\cdots p_n} = T(\vec{e}^{p_1}, \vec{e}^{p_2}, \cdots, \vec{e}^{p_n})
-\end{align*}
 $$
 
 where $T$ is a multilinear map with respect to
 
 $$
-\begin{align*}
 \vec{e}^{p_1}, \vec{e}^{p_2}, \cdots, \vec{e}^{p_n}
-\end{align*}
 $$
 
 ($T$ can depend on $\vec{x}$, which is just treated as a constant). 
@@ -230,17 +206,13 @@ A tensor's coordinate can also be mixed between contravariant and covariant.
 **Definition.** Given a rank-$(i+j)$ tensor $X$, its component,
 
 $$
-\begin{align*}
 X^{p_1p_2\cdots p_j}_{q_1q_2\cdots q_i} = T(\vec{e}^{p_1}, \vec{e}^{p_2}, \cdots, \vec{e}^{p_j}, \vec{e}_{q_1}, \vec{e}_{q_2}, \cdots, \vec{e}_{q_i})
-\end{align*}
 $$
 
 where $T$ is a multilinear map with respect to 
 
 $$
-\begin{align*}
 \vec{e}^{p_1}, \vec{e}^{p_2}, \cdots, \vec{e}^{p_n} \text{ and } \vec{e}_{q_1}, \vec{e}_{q_2}, \cdots, \vec{e}_{q_i}
-\end{align*}
 $$
 
 ($T$ can depend on $\vec{x}$, which is just treated as a constant). 
@@ -265,9 +237,7 @@ $$
 Hence, it should transform in a way that is the product of the transformation of these basis vectors. In other words,
 
 $$
-\begin{align*}
 	{X'}^{p_1p_2\cdots p_j}_{q_1q_2\cdots q_i} = \frac{\partial {x'}^{p_1}}{\partial x^{m_1}} \frac{\partial {x'}^{p_2}}{\partial x^{m_2}} \cdots \frac{\partial {x'}^{p_j}}{\partial x^{m_j}} \frac{\partial x^{n_1}}{\partial {x'}^{q_1}} \frac{\partial x^{n_2}}{\partial {x'}^{q_2}} \cdots \frac{\partial x^{n_i}}{\partial {x'}^{q_i}} {X}^{m_1m_2\cdots m_j}_{n_1n_2\cdots n_i} 
-\end{align*}
 $$
 
 The quick and easy way to remember this is to just note that all the indices cancel out---an upper index must be matched with a lower index (or an upper index in the denominator; putting a contravariant variable in the denominator inverts the way it transforms, making the fraction transform like a covariant variable). 
@@ -292,44 +262,34 @@ $\tau$ is a unique variable that takes on a meaning similar to time. But really,
 We can begin to tackle the above equation by rewriting $\vec{u}$ in terms of its contravariant components. 
 
 $$
-\begin{align*}
     0 = \frac{d (u^i \vec{e}_i)}{d \tau} = \frac{du^i}{d\tau}\vec{e}_i + \frac{d\vec{e}_k}{d\tau} u^k
-\end{align*}
 $$
 
 Let's take a careful look at $\frac{d\vec{e}_k}{d\tau}$. If the coordinate system is not "flat", $\vec{e}_k$ will certainly change as we increase $\tau$ because our position will change and $\vec{e}_k (\vec{x})$ is dependent on the position we are at. The chain rule tells us that,
 
 $$
-\begin{align*}
     \frac{d \vec{e}_k}{d\tau} &= \frac{\partial \vec{e}_k}{\partial x^j} \frac{dx^j}{d\tau} \\
     &=\frac{\partial \vec{e}_k}{\partial x^j} u^j 
-\end{align*}
 $$
 
 $\frac{\partial \vec{e}_k}{\partial x^j}$ is a vector. We prefer to represent it in terms of its components, so that all the vectors left in our main equation are basis vectors. 
 
 $$
-\begin{align*}
     \frac{\partial \vec{e}_k}{\partial x^j} &= \left( \frac{\partial \vec{e}_k}{\partial x^j} \cdot \vec{e}^i \right)\vec{e}_i
-\end{align*}
 $$
 
 We substitute the expression back into our main equation,
 
 $$
-\begin{align*}
     0 &= \frac{d u^i}{d\tau} \vec{e}_i + \left( \frac{\partial \vec{e}_k}{\partial x^j} \cdot \vec{e}^i \right) \vec{e}_i u^j u^k \\
     0 &= \vec{e}_i \left( \frac{du^i}{d\tau} + \left(\frac{\partial \vec{e}_k}{\partial x^j}\cdot \vec{e}^i \right) u^j u^k \right)
-\end{align*}
 $$
 
 The $0$ on the left hand side is a zero vector. That means, every component of the vector equals the scalar $0$. Hence,
 
 $$
-\begin{align*}
-    0 &= \frac{du^i}{d\tau} + \left(\frac{\partial \vec{e}_k}{\partial x^j}\cdot \vec{e}^i \right) u^j u^k \\
-    0 &= \frac{d^2x^i}{d\tau^2} + \Gamma^i_{jk} u^j u^k &\text{to write it in more familiar form}
-\end{align*}
+0 &= \frac{du^i}{d\tau} + \left(\frac{\partial \vec{e}_k}{\partial x^j}\cdot \vec{e}^i \right) u^j u^k \\
+0 &= \frac{d^2x^i}{d\tau^2} + \Gamma^i_{jk} u^j u^k &\text{to write it in more familiar form}
 $$
 
 **Definition.** The Christoffel symbol $\Gamma$ is defined such that $\Gamma^i_{jk} = \frac{\partial \vec{e}_k}{\partial x^j}\cdot \vec{e}^i$
@@ -347,21 +307,17 @@ Coming up with the expression for $\Gamma^i_{jk}$ is hard. Instead, I will provi
 **Fact.** The Christoffel symbol can be computed from the metric tensor by,
 
 $$
-\begin{align*}
-    \Gamma^i_{jk} = \frac{1}{2}g^{\alpha i}\left( \partial_j g_{\alpha k} + \partial_k g_{\alpha j} - \partial_\alpha g_{jk} \right)
-\end{align*}
+\Gamma^i_{jk} = \frac{1}{2}g^{\alpha i}\left( \partial_j g_{\alpha k} + \partial_k g_{\alpha j} - \partial_\alpha g_{jk} \right)
 $$
 
 
 **Proof.**
 
 $$
-\begin{align*}
     &\frac{1}{2}g^{\alpha i}\left( \partial_j g_{\alpha k} + \partial_k g_{\alpha j} - \partial_\alpha g_{jk} \right) \\
     =& \frac{1}{2}g^{\alpha i}\left( \frac{\partial \vec{e}_\alpha}{\partial x^j}\cdot\vec{e}_k + \frac{\partial \vec{e}_k}{\partial x^j}\cdot\vec{e}_\alpha
     +\frac{\partial \vec{e}_\alpha}{\partial x^k}\cdot\vec{e}_j + \frac{\partial \vec{e}_j}{\partial x^k}\cdot\vec{e}_\alpha
     -\frac{\partial \vec{e}_j}{\partial x^\alpha}\cdot\vec{e}_k -\frac{\partial \vec{e}_k}{\partial x^\alpha}\cdot\vec{e}_j \right) 
-\end{align*}
 $$
 
 Note that $\frac{\partial \vec{e}_j}{\partial x^k} = \frac{\partial \vec{e}_k}{\partial x^j}$ because GR coordinates are torsion-free.
@@ -369,21 +325,17 @@ Note that $\frac{\partial \vec{e}_j}{\partial x^k} = \frac{\partial \vec{e}_k}{\
 The terms in the expression cancel out to,
 
 $$
-\begin{align*}
     &\frac{1}{2}g^{\alpha i}\left( \frac{\partial \vec{e}_k}{\partial x^j}\cdot\vec{e}_\alpha
     +\frac{\partial \vec{e}_j}{\partial x^k}\cdot\vec{e}_\alpha \right) \\
     =& g^{\alpha i} \frac{\partial \vec{e}_k}{\partial x^j}\cdot\vec{e}_\alpha \\
     =& \frac{\partial \vec{e}_k}{\partial x^j}\cdot\vec{e}^i \\
     =& \Gamma^i_{jk}
-\end{align*}
 $$
 
 You can, if you would like, rewrite the geodesic equation in terms of the metric tensor.
 
 $$ 
-\begin{align*}
     0 = \frac{d u^i}{d\tau} + \frac{1}{2}u^ju^k g^{\alpha i}\left( \partial_j g_{\alpha k} + \partial_k g_{\alpha j} - \partial_\alpha g_{jk} \right)
-\end{align*}
 $$
 
 Happy bashing!
@@ -400,10 +352,8 @@ A straight line, in mathematical characterization, is the path between $A$ and $
 This is a direct result of the Law of Cosine. Hence, in an ordinary coordinate system, the straight line between $A$ and $B$ is characterized as the path $P$ that minimizes,
 
 $$
-\begin{align*}
     s &= \int_P \sqrt{dx^i dx^j g_{ij}} \\ 
     &= \int_P \sqrt{u^i u^j g_{ij}} d\tau 
-\end{align*}
 $$
 
 However, GR coordinate system is a little bit different because $\vec{e}_t \cdot \vec{e}_t < 0$. So $\vec{e}_t$ is a rather special basis vector. As a result, $\vec{dx}\cdot \vec{dx}$ can be negative and must be negative if $\vec{dx}$ is time like. Therefore, we have to be cautious about the use of square root. 
@@ -411,10 +361,8 @@ However, GR coordinate system is a little bit different because $\vec{e}_t \cdot
 Minimizing the $ds^2=\vec{dx}\cdot \vec{dx}$ is equivalent to maximizing $d\tau^2 = -ds^2$. Hence, the condition for straight lines in GR coordinates is a path $P$ that maximizes,
 
 $$
-\begin{align*}
     \tau &= \int_P d\tau \\
     &= \int_P \sqrt{-dx^idx^jg_{ij}}
-\end{align*}
 $$
 
 which we can compute by parametrizing the integrand. 
