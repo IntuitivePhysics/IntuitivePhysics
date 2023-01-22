@@ -49,7 +49,7 @@ $$
 Based on its definition, we can substitute $g_{ij}$ into our equation to get,
 
 $$
-	x_i = g_{ji} x^j
+x_i = g_{ji} x^j
 $$
 
 This is called the **index lowering** operation.
@@ -57,10 +57,10 @@ This is called the **index lowering** operation.
 If we have the covariant coordinates, how can we find the contravariant coordinates? We can do that by taking the matrix inverse of $g_{ji}$ on both sides of the equation, begetting,
 
 $$
-	g^{ki} x_i &= g^{ki}g_{ji} x^j &\text{$g^{ki}$ as an operator collapsing its 2nd index}\\
-	g^{ki} x_i &= g^{ki}g_{ij} x^j &\text{symmetry of $g$ is used}\\
-	g^{ki} x_i &= \delta^k_j x^j \\
-	g^{ki} x_i &= x^k 
+g^{ki} x_i = g^{ki}g_{ji} x^j \\
+g^{ki} x_i = g^{ki}g_{ij} x^j \\
+g^{ki} x_i = \delta^k_j x^j \\
+g^{ki} x_i = x^k 
 $$
 
 This could be called a **index raising** operation, I suppose.
@@ -70,7 +70,7 @@ This could be called a **index raising** operation, I suppose.
 When we change the coordinate system (i.e. $\{\vec{e}_i\}$), how do the contravariant components of a vector transform? The answer is intuitively straightforward---because the coordinate system is locally a non-orthonormal cartesian coordinate, we just need to follow the chain rule.
 
 $$
-	{x'}^i = \frac{\partial {x'}^i}{\partial x^j} x^j
+{x'}^i = \frac{\partial {x'}^i}{\partial x^j} x^j
 $$
 
 ##### How do covariant components transform?
@@ -110,19 +110,19 @@ In terms of these dual basis, the definition of covariant and contravariant coor
 The contravariant coordinates becomes like the covariant coordinates:
 
 $$
-	x^i \vec{e}_i &= \vec{x} \\
-	x^i \vec{e}_i \cdot \vec{e}^i &= \vec{x}\cdot \vec{e}^i \\
-	x^i &= \vec{x} \cdot \vec{e}^i
+	x^i \vec{e}_i = \vec{x} \\
+	x^i \vec{e}_i \cdot \vec{e}^i = \vec{x}\cdot \vec{e}^i \\
+	x^i = \vec{x} \cdot \vec{e}^i
 $$
 
 We can also show the covariant coordinates becomes like the contravariant coordinates:
 Let $\vec{x} = y_j \vec{e}^j$. We then prove $x_i = y_i$.
 
 $$
-	\vec{x} &= y_j \vec{e}^j \\
-	\vec{x}\cdot \vec{e}_i &= y_j \vec{e}^j \cdot \vec{e}_i \\
-	x_i &= y_j \delta^j_i \\
-	x_i &= y_i 
+	\vec{x} = y_j \vec{e}^j \\
+	\vec{x}\cdot \vec{e}_i = y_j \vec{e}^j \cdot \vec{e}_i \\
+	x_i = y_j \delta^j_i \\
+	x_i = y_i 
 $$
 
 Now, we are able to define both contravariant coordinates and covariant coordinates more clearly. 
@@ -268,28 +268,28 @@ $$
 Let's take a careful look at $\frac{d\vec{e}_k}{d\tau}$. If the coordinate system is not "flat", $\vec{e}_k$ will certainly change as we increase $\tau$ because our position will change and $\vec{e}_k (\vec{x})$ is dependent on the position we are at. The chain rule tells us that,
 
 $$
-    \frac{d \vec{e}_k}{d\tau} &= \frac{\partial \vec{e}_k}{\partial x^j} \frac{dx^j}{d\tau} \\
-    &=\frac{\partial \vec{e}_k}{\partial x^j} u^j 
+    \frac{d \vec{e}_k}{d\tau} = \frac{\partial \vec{e}_k}{\partial x^j} \frac{dx^j}{d\tau} \\
+    =\frac{\partial \vec{e}_k}{\partial x^j} u^j 
 $$
 
 $\frac{\partial \vec{e}_k}{\partial x^j}$ is a vector. We prefer to represent it in terms of its components, so that all the vectors left in our main equation are basis vectors. 
 
 $$
-    \frac{\partial \vec{e}_k}{\partial x^j} &= \left( \frac{\partial \vec{e}_k}{\partial x^j} \cdot \vec{e}^i \right)\vec{e}_i
+    \frac{\partial \vec{e}_k}{\partial x^j} = \left( \frac{\partial \vec{e}_k}{\partial x^j} \cdot \vec{e}^i \right)\vec{e}_i
 $$
 
 We substitute the expression back into our main equation,
 
 $$
-    0 &= \frac{d u^i}{d\tau} \vec{e}_i + \left( \frac{\partial \vec{e}_k}{\partial x^j} \cdot \vec{e}^i \right) \vec{e}_i u^j u^k \\
-    0 &= \vec{e}_i \left( \frac{du^i}{d\tau} + \left(\frac{\partial \vec{e}_k}{\partial x^j}\cdot \vec{e}^i \right) u^j u^k \right)
+    0 = \frac{d u^i}{d\tau} \vec{e}_i + \left( \frac{\partial \vec{e}_k}{\partial x^j} \cdot \vec{e}^i \right) \vec{e}_i u^j u^k \\
+    0 = \vec{e}_i \left( \frac{du^i}{d\tau} + \left(\frac{\partial \vec{e}_k}{\partial x^j}\cdot \vec{e}^i \right) u^j u^k \right)
 $$
 
 The $0$ on the left hand side is a zero vector. That means, every component of the vector equals the scalar $0$. Hence,
 
 $$
-0 &= \frac{du^i}{d\tau} + \left(\frac{\partial \vec{e}_k}{\partial x^j}\cdot \vec{e}^i \right) u^j u^k \\
-0 &= \frac{d^2x^i}{d\tau^2} + \Gamma^i_{jk} u^j u^k &\text{to write it in more familiar form}
+0 = \frac{du^i}{d\tau} + \left(\frac{\partial \vec{e}_k}{\partial x^j}\cdot \vec{e}^i \right) u^j u^k \\
+0 = \frac{d^2x^i}{d\tau^2} + \Gamma^i_{jk} u^j u^k 
 $$
 
 **Definition.** The Christoffel symbol $\Gamma$ is defined such that $\Gamma^i_{jk} = \frac{\partial \vec{e}_k}{\partial x^j}\cdot \vec{e}^i$
@@ -314,8 +314,8 @@ $$
 **Proof.**
 
 $$
-    &\frac{1}{2}g^{\alpha i}\left( \partial_j g_{\alpha k} + \partial_k g_{\alpha j} - \partial_\alpha g_{jk} \right) \\
-    =& \frac{1}{2}g^{\alpha i}\left( \frac{\partial \vec{e}_\alpha}{\partial x^j}\cdot\vec{e}_k + \frac{\partial \vec{e}_k}{\partial x^j}\cdot\vec{e}_\alpha
+    \frac{1}{2}g^{\alpha i}\left( \partial_j g_{\alpha k} + \partial_k g_{\alpha j} - \partial_\alpha g_{jk} \right) \\
+    = \frac{1}{2}g^{\alpha i}\left( \frac{\partial \vec{e}_\alpha}{\partial x^j}\cdot\vec{e}_k + \frac{\partial \vec{e}_k}{\partial x^j}\cdot\vec{e}_\alpha
     +\frac{\partial \vec{e}_\alpha}{\partial x^k}\cdot\vec{e}_j + \frac{\partial \vec{e}_j}{\partial x^k}\cdot\vec{e}_\alpha
     -\frac{\partial \vec{e}_j}{\partial x^\alpha}\cdot\vec{e}_k -\frac{\partial \vec{e}_k}{\partial x^\alpha}\cdot\vec{e}_j \right) 
 $$
@@ -325,11 +325,11 @@ Note that $\frac{\partial \vec{e}_j}{\partial x^k} = \frac{\partial \vec{e}_k}{\
 The terms in the expression cancel out to,
 
 $$
-    &\frac{1}{2}g^{\alpha i}\left( \frac{\partial \vec{e}_k}{\partial x^j}\cdot\vec{e}_\alpha
+    \frac{1}{2}g^{\alpha i}\left( \frac{\partial \vec{e}_k}{\partial x^j}\cdot\vec{e}_\alpha
     +\frac{\partial \vec{e}_j}{\partial x^k}\cdot\vec{e}_\alpha \right) \\
-    =& g^{\alpha i} \frac{\partial \vec{e}_k}{\partial x^j}\cdot\vec{e}_\alpha \\
-    =& \frac{\partial \vec{e}_k}{\partial x^j}\cdot\vec{e}^i \\
-    =& \Gamma^i_{jk}
+    = g^{\alpha i} \frac{\partial \vec{e}_k}{\partial x^j}\cdot\vec{e}_\alpha \\
+    = \frac{\partial \vec{e}_k}{\partial x^j}\cdot\vec{e}^i \\
+    = \Gamma^i_{jk}
 $$
 
 You can, if you would like, rewrite the geodesic equation in terms of the metric tensor.
@@ -352,8 +352,8 @@ A straight line, in mathematical characterization, is the path between $A$ and $
 This is a direct result of the Law of Cosine. Hence, in an ordinary coordinate system, the straight line between $A$ and $B$ is characterized as the path $P$ that minimizes,
 
 $$
-    s &= \int_P \sqrt{dx^i dx^j g_{ij}} \\ 
-    &= \int_P \sqrt{u^i u^j g_{ij}} d\tau 
+    s = \int_P \sqrt{dx^i dx^j g_{ij}} \\ 
+    = \int_P \sqrt{u^i u^j g_{ij}} d\tau 
 $$
 
 However, GR coordinate system is a little bit different because $\vec{e}_t \cdot \vec{e}_t < 0$. So $\vec{e}_t$ is a rather special basis vector. As a result, $\vec{dx}\cdot \vec{dx}$ can be negative and must be negative if $\vec{dx}$ is time like. Therefore, we have to be cautious about the use of square root. 
@@ -361,8 +361,8 @@ However, GR coordinate system is a little bit different because $\vec{e}_t \cdot
 Minimizing the $ds^2=\vec{dx}\cdot \vec{dx}$ is equivalent to maximizing $d\tau^2 = -ds^2$. Hence, the condition for straight lines in GR coordinates is a path $P$ that maximizes,
 
 $$
-    \tau &= \int_P d\tau \\
-    &= \int_P \sqrt{-dx^idx^jg_{ij}}
+    \tau = \int_P d\tau \\
+    = \int_P \sqrt{-dx^idx^jg_{ij}}
 $$
 
 which we can compute by parametrizing the integrand. 
